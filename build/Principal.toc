@@ -1,0 +1,238 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {chapter}{\numberline {1}Vettori geometrici nello spazio}{7}{chapter.1}% 
+\contentsline {subsubsection}{Vettori particolari}{7}{section*.2}% 
+\contentsline {section}{\numberline {1.1}Operazioni tra vettori}{7}{section.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}Somma di vettori}{7}{subsection.1.1.1}% 
+\contentsline {subsection}{\numberline {1.1.2}Prodotto per uno scalare}{8}{subsection.1.1.2}% 
+\contentsline {subsection}{\numberline {1.1.3}Normalizzazione di un vettore}{8}{subsection.1.1.3}% 
+\contentsline {subsection}{\numberline {1.1.4}Prodotto scalare tra vettori}{8}{subsection.1.1.4}% 
+\contentsline {subsection}{\numberline {1.1.5}Proiezione di un vettore su un altro}{8}{subsection.1.1.5}% 
+\contentsline {chapter}{\numberline {2}Coordinate}{9}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Operazioni considerando le coordinate}{9}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Somma di due vettori}{9}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Prodotto per uno scalare}{9}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Modulo di un vettore}{9}{subsection.2.1.3}% 
+\contentsline {subsection}{\numberline {2.1.4}Prodotto scalare}{9}{subsection.2.1.4}% 
+\contentsline {subsubsection}{Dimostrazione}{10}{section*.3}% 
+\contentsline {chapter}{\numberline {3}Piani e rette nello spazio}{11}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Il piano}{11}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Determinare l'equazione di un piano partendo dal vettore normale e da un punto}{11}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Determinare l'equazione di un piano partendo da tre punti non allineati}{11}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Conversione tra equazione parametrica e cartesiana}{12}{subsection.3.1.3}% 
+\contentsline {section}{\numberline {3.2}La retta}{12}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Determinare l'equazione di una retta da un punto e da un vettore}{12}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Fascio dei parametri di sostegno a una retta}{12}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}Posizione reciproca}{12}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Due rette}{12}{subsection.3.3.1}% 
+\contentsline {section}{\numberline {3.4}Due piani}{13}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Retta e piano}{13}{section.3.5}% 
+\contentsline {section}{\numberline {3.6}Le distanze}{13}{section.3.6}% 
+\contentsline {subsection}{\numberline {3.6.1}Distanza tra due punti}{13}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.2}Distanza punto-piano}{13}{subsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.6.3}Distanza punto retta}{13}{subsection.3.6.3}% 
+\contentsline {subsection}{\numberline {3.6.4}Distanza tra due piani}{13}{subsection.3.6.4}% 
+\contentsline {subsection}{\numberline {3.6.5}Distanza tra due rette}{14}{subsection.3.6.5}% 
+\contentsline {chapter}{\numberline {4}Sistemi lineari}{15}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Le ennuple}{15}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Operazioni tra ennuple}{15}{subsection.4.1.1}% 
+\contentsline {section}{\numberline {4.2}Le equazioni lineari}{15}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}I sistemi lineari}{15}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Operazioni elementari di un sistema lineare}{16}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}Matrici nei sistemi lineari}{16}{section.4.5}% 
+\contentsline {subsection}{\numberline {4.5.1}Operazioni elementari sulle matrici}{16}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.5.2}Matrici a scalini}{16}{subsection.4.5.2}% 
+\contentsline {subsection}{\numberline {4.5.3}Metodo di risoluzione di un sistema lineare da una matrice (algoritmo di Gauss-Jordan)}{17}{subsection.4.5.3}% 
+\contentsline {subsubsection}{Teorema di Rouch\`e-Capelli}{17}{section*.4}% 
+\contentsline {subsection}{\numberline {4.5.4}Forma a scalini ridotta per righe}{17}{subsection.4.5.4}% 
+\contentsline {chapter}{\numberline {5}Matrici}{19}{chapter.5}% 
+\contentsline {subsubsection}{Matrice quadrata}{19}{section*.5}% 
+\contentsline {subsubsection}{Matrice identica}{19}{section*.6}% 
+\contentsline {subsubsection}{Trasposta della matrice}{19}{section*.7}% 
+\contentsline {subsubsection}{Matrice simmetrica}{19}{section*.8}% 
+\contentsline {section}{\numberline {5.1}Operazioni tra matrici}{19}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Somma tra matrici}{19}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Prodotto di una matrice per uno scalare}{20}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}Prodotto tra matrici}{20}{subsection.5.1.3}% 
+\contentsline {subsection}{\numberline {5.1.4}Altra forma di operazioni sulle righe delle matrici}{20}{subsection.5.1.4}% 
+\contentsline {section}{\numberline {5.2}La matrice inversa}{20}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Unicit\`a della matrice inversa}{20}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Prodotto di matrici invertibili}{20}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Trovare la matrice inversa}{21}{subsection.5.2.3}% 
+\contentsline {section}{\numberline {5.3}Matrici e sistemi lineari}{21}{section.5.3}% 
+\contentsline {chapter}{\numberline {6}Lo spazio $\mathbb {R^n}$}{23}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Operazioni tra n-uple}{23}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Sottospazi di $\mathbf {R^n}$}{23}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Sottospazio generato da vettori}{23}{subsection.6.2.1}% 
+\contentsline {subsection}{\numberline {6.2.2}Spazio delle righe di A}{24}{subsection.6.2.2}% 
+\contentsline {subsection}{\numberline {6.2.3}Spazio delle colonne di A}{24}{subsection.6.2.3}% 
+\contentsline {subsection}{\numberline {6.2.4}Insiemi di generatori di un sottospazio}{24}{subsection.6.2.4}% 
+\contentsline {subsection}{\numberline {6.2.5}Descrizioni di sottospazio $U\subset \mathbb {R}, U=<v_1,\cdots ,v_n>$}{24}{subsection.6.2.5}% 
+\contentsline {section}{\numberline {6.3}Dipendenza e indipendenza lineare}{24}{section.6.3}% 
+\contentsline {subsubsection}{Osservazioni}{24}{section*.9}% 
+\contentsline {section}{\numberline {6.4}Le basi}{25}{section.6.4}% 
+\contentsline {chapter}{\numberline {7}Spazi vettoriali}{27}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Gruppo}{27}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Campo}{27}{section.7.2}% 
+\contentsline {section}{\numberline {7.3}Spazio vettoriale}{27}{section.7.3}% 
+\contentsline {section}{\numberline {7.4}$\mathbb {R}[x]$}{27}{section.7.4}% 
+\contentsline {section}{\numberline {7.5}Sottospazio}{28}{section.7.5}% 
+\contentsline {chapter}{\numberline {8}Determinante}{29}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}Sottomatrici}{29}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Definizione di determinante}{29}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}Matrice triangolare alta}{29}{section.8.3}% 
+\contentsline {section}{\numberline {8.4}Teorema di Laplace}{30}{section.8.4}% 
+\contentsline {subsection}{\numberline {8.4.1}Conseguenze}{30}{subsection.8.4.1}% 
+\contentsline {section}{\numberline {8.5}Teorema di Binet}{30}{section.8.5}% 
+\contentsline {subsection}{\numberline {8.5.1}Corollario}{30}{subsection.8.5.1}% 
+\contentsline {section}{\numberline {8.6}Determinante matrici associate ad operazioni}{30}{section.8.6}% 
+\contentsline {subsection}{\numberline {8.6.1}Cambio del determinante dopo un'operazione elementare}{30}{subsection.8.6.1}% 
+\contentsline {section}{\numberline {8.7}Determinante di una matrice ridotta a scalini}{30}{section.8.7}% 
+\contentsline {section}{\numberline {8.8}Il prodotto vettoriale}{31}{section.8.8}% 
+\contentsline {subsection}{\numberline {8.8.1}Propriet\`a}{31}{subsection.8.8.1}% 
+\contentsline {subsection}{\numberline {8.8.2}Dimostrazione della formula}{31}{subsection.8.8.2}% 
+\contentsline {subsection}{\numberline {8.8.3}Prodotto misto}{32}{subsection.8.8.3}% 
+\contentsline {subsection}{\numberline {8.8.4}Applicazioni nella geometria}{32}{subsection.8.8.4}% 
+\contentsline {subsubsection}{Determinare se due rette sono complanari}{32}{section*.10}% 
+\contentsline {subsubsection}{Trovare l'equazione cartesiana di un piano}{32}{section*.11}% 
+\contentsline {subsubsection}{Determinare la direzione ortogonale a due rette non parallele}{32}{section*.12}% 
+\contentsline {section}{\numberline {8.9}Determinanti e sistemi lineari}{32}{section.8.9}% 
+\contentsline {subsection}{\numberline {8.9.1}Teorema di Cramer}{32}{subsection.8.9.1}% 
+\contentsline {subsubsection}{Dimostrazione}{33}{section*.13}% 
+\contentsline {subsubsection}{Cofattore o complemento algebrico}{33}{section*.14}% 
+\contentsline {subsection}{\numberline {8.9.2}Corollario del teorema di Cramer}{33}{subsection.8.9.2}% 
+\contentsline {subsubsection}{Dimostrazione}{33}{section*.15}% 
+\contentsline {subsubsection}{Osservazione}{33}{section*.16}% 
+\contentsline {chapter}{\numberline {9}Le basi}{35}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}Definizione di base}{35}{section.9.1}% 
+\contentsline {subsection}{\numberline {9.1.1}Esistenza della base}{35}{subsection.9.1.1}% 
+\contentsline {subsubsection}{Dimostrazione}{35}{section*.17}% 
+\contentsline {subsubsection}{Osservazione}{36}{section*.18}% 
+\contentsline {subsection}{\numberline {9.1.2}Estrazione di una base da un sistema di generatori per il caso $\mathbf {V=\mathbb {R^n}}$}{36}{subsection.9.1.2}% 
+\contentsline {section}{\numberline {9.2}Complemento a una base}{36}{section.9.2}% 
+\contentsline {subsection}{\numberline {9.2.1}Corollario 1}{36}{subsection.9.2.1}% 
+\contentsline {subsubsection}{Dimostrazione}{37}{section*.19}% 
+\contentsline {subsection}{\numberline {9.2.2}Corollario 2}{37}{subsection.9.2.2}% 
+\contentsline {subsubsection}{Dimostrazione}{37}{section*.20}% 
+\contentsline {section}{\numberline {9.3}Dimensione di uno spazio vettoriale}{37}{section.9.3}% 
+\contentsline {subsubsection}{Osservazione}{37}{section*.21}% 
+\contentsline {section}{\numberline {9.4}Completare a una base un sistema lineare in $\mathbb {R^n}$}{37}{section.9.4}% 
+\contentsline {section}{\numberline {9.5}Coordinate}{37}{section.9.5}% 
+\contentsline {subsection}{\numberline {9.5.1}Linearit\`a e biunivocit\`a della funzione delle $\mathbb {T_\beta }$}{38}{subsection.9.5.1}% 
+\contentsline {subsubsection}{Dimostrazione}{38}{section*.22}% 
+\contentsline {subsection}{\numberline {9.5.2}La funzione $T_\beta $ e la consevazione delle propriet\`a degli insiemi di vettori}{38}{subsection.9.5.2}% 
+\contentsline {subsubsection}{Dimostrazione}{38}{section*.23}% 
+\contentsline {subsection}{\numberline {9.5.3}Determinare la base di un qualsiasi spazio vettoriale}{38}{subsection.9.5.3}% 
+\contentsline {section}{\numberline {9.6}Spazio delle righe e delle colonne di una matrice}{39}{section.9.6}% 
+\contentsline {subsection}{\numberline {9.6.1}Dimensione dello spazio delle righe di una matrice in forma a scalini}{39}{subsection.9.6.1}% 
+\contentsline {subsubsection}{Dimostrazione}{39}{section*.24}% 
+\contentsline {subsection}{\numberline {9.6.2}Dimensione dello spazio delle righe di una matrice}{39}{subsection.9.6.2}% 
+\contentsline {subsubsection}{Dimostrazione}{39}{section*.25}% 
+\contentsline {subsection}{\numberline {9.6.3}Corollario}{39}{subsection.9.6.3}% 
+\contentsline {subsubsection}{Dimostrazione}{40}{section*.26}% 
+\contentsline {section}{\numberline {9.7}Interpolazione polinomiale}{40}{section.9.7}% 
+\contentsline {subsection}{\numberline {9.7.1}Basi di Lagrange}{40}{subsection.9.7.1}% 
+\contentsline {chapter}{\numberline {10}Funzioni lineari}{41}{chapter.10}% 
+\contentsline {subsection}{\numberline {10.0.1}Composte di funzioni lineari}{41}{subsection.10.0.1}% 
+\contentsline {subsubsection}{Linearit\`a della funzione composta}{41}{section*.27}% 
+\contentsline {section}{\numberline {10.1}Nucleo}{41}{section.10.1}% 
+\contentsline {subsubsection}{Osservazione}{41}{section*.28}% 
+\contentsline {subsection}{\numberline {10.1.1}Nucleo e propriet\`a di $\mathbf {f}$}{42}{subsection.10.1.1}% 
+\contentsline {subsubsection}{Dimostrazione}{42}{section*.29}% 
+\contentsline {section}{\numberline {10.2}Immagine}{42}{section.10.2}% 
+\contentsline {subsubsection}{Osservazioni}{42}{section*.30}% 
+\contentsline {subsection}{\numberline {10.2.1}Immagine e propriet\`a di $\mathbf {f}$}{42}{subsection.10.2.1}% 
+\contentsline {subsubsection}{Dimostrazione}{43}{section*.31}% 
+\contentsline {section}{\numberline {10.3}Funzioni lineari definite da matrici}{43}{section.10.3}% 
+\contentsline {subsubsection}{Linearit\`a}{43}{section*.32}% 
+\contentsline {subsection}{\numberline {10.3.1}Composizione}{43}{subsection.10.3.1}% 
+\contentsline {subsection}{\numberline {10.3.2}Invertibilit\`a}{43}{subsection.10.3.2}% 
+\contentsline {subsection}{\numberline {10.3.3}Nucleo e immagine}{44}{subsection.10.3.3}% 
+\contentsline {subsubsection}{Nucleo}{44}{section*.33}% 
+\contentsline {subsubsection}{Immagine}{44}{section*.34}% 
+\contentsline {section}{\numberline {10.4}Teorema della nullit\`a pi\`u rango}{44}{section.10.4}% 
+\contentsline {subsubsection}{Dimostrazione}{44}{section*.35}% 
+\contentsline {subsection}{\numberline {10.4.1}Corollario}{44}{subsection.10.4.1}% 
+\contentsline {subsubsection}{Dimostrazione}{45}{section*.36}% 
+\contentsline {subsection}{\numberline {10.4.2}Osservazione}{45}{subsection.10.4.2}% 
+\contentsline {section}{\numberline {10.5}Matrici rappresentative}{45}{section.10.5}% 
+\contentsline {subsubsection}{Dimostrazione}{45}{section*.37}% 
+\contentsline {subsection}{\numberline {10.5.1}Definizione di matrice rappresentativa}{45}{subsection.10.5.1}% 
+\contentsline {subsection}{\numberline {10.5.2}Utilizzo delle matrici rappresentative}{46}{subsection.10.5.2}% 
+\contentsline {subsubsection}{Dimostrazione}{46}{section*.38}% 
+\contentsline {subsection}{\numberline {10.5.3}Osservazione}{46}{subsection.10.5.3}% 
+\contentsline {subsection}{\numberline {10.5.4}Cambiamenti di base}{47}{subsection.10.5.4}% 
+\contentsline {subsubsection}{Osservazioni}{47}{section*.39}% 
+\contentsline {subsubsection}{Gli endomorfismi}{47}{section*.40}% 
+\contentsline {chapter}{\numberline {11}Spazi vettoriali euclidei}{49}{chapter.11}% 
+\contentsline {section}{\numberline {11.1}Prodotto scalare}{49}{section.11.1}% 
+\contentsline {subsection}{\numberline {11.1.1}Esempi di spazi vettoriali euclidei}{49}{subsection.11.1.1}% 
+\contentsline {subsubsection}{$\mathbf {V=\mathbb {R^n}}$}{49}{section*.41}% 
+\contentsline {subsubsection}{$\mathbf {V=\mathbb {R}_2[x]}$}{49}{section*.42}% 
+\contentsline {subsubsection}{$\mathbf {V=M_2(\mathbb {R})}$}{50}{section*.43}% 
+\contentsline {section}{\numberline {11.2}Disuguaglianza di Cauchy-Schwartz}{50}{section.11.2}% 
+\contentsline {subsubsection}{Dimostrazione}{50}{section*.44}% 
+\contentsline {section}{\numberline {11.3}La norma}{50}{section.11.3}% 
+\contentsline {subsection}{\numberline {11.3.1}Osservazione}{50}{subsection.11.3.1}% 
+\contentsline {subsection}{\numberline {11.3.2}Propriet\`a della norma}{50}{subsection.11.3.2}% 
+\contentsline {subsubsection}{Dimostrazione}{51}{section*.45}% 
+\contentsline {section}{\numberline {11.4}Distanza tra due vettori}{51}{section.11.4}% 
+\contentsline {subsection}{\numberline {11.4.1}Propriet\`a della distanza}{51}{subsection.11.4.1}% 
+\contentsline {subsubsection}{Dimostrazione}{51}{section*.46}% 
+\contentsline {section}{\numberline {11.5}Ortogonalit\`a}{51}{section.11.5}% 
+\contentsline {subsection}{\numberline {11.5.1}Ortogonalit\`a e indipendenza lineare}{51}{subsection.11.5.1}% 
+\contentsline {subsubsection}{Dimostrazione}{51}{section*.47}% 
+\contentsline {subsection}{\numberline {11.5.2}Corollario}{52}{subsection.11.5.2}% 
+\contentsline {subsection}{\numberline {11.5.3}Proiezioni}{52}{subsection.11.5.3}% 
+\contentsline {subsubsection}{Funzione proiezione ortogonale}{52}{section*.48}% 
+\contentsline {subsection}{\numberline {11.5.4}Basi ortonormali}{52}{subsection.11.5.4}% 
+\contentsline {subsubsection}{Ortonormalit\`a}{52}{section*.49}% 
+\contentsline {subsubsection}{Metodo di Gram-Schmidt}{52}{section*.50}% 
+\contentsline {subsubsection}{Coordinate di un vettore rispetto ad una base ortonormale}{53}{section*.51}% 
+\contentsline {subsection}{\numberline {11.5.5}Complemento ortogonale}{53}{subsection.11.5.5}% 
+\contentsline {subsubsection}{Dimensione del complemento ortogonale}{53}{section*.52}% 
+\contentsline {section}{\numberline {11.6}Isomerie e matrici ortogonali}{53}{section.11.6}% 
+\contentsline {subsubsection}{Conservazione della norma}{53}{section*.53}% 
+\contentsline {subsubsection}{Conservazione della distanza}{54}{section*.54}% 
+\contentsline {subsection}{\numberline {11.6.1}Matrici ortogonale}{54}{subsection.11.6.1}% 
+\contentsline {subsection}{\numberline {11.6.2}Condizione affinch\`e una funzione sia un'isomeria}{54}{subsection.11.6.2}% 
+\contentsline {subsubsection}{Dimostrazione}{54}{section*.55}% 
+\contentsline {subsection}{\numberline {11.6.3}Osservazioni}{54}{subsection.11.6.3}% 
+\contentsline {chapter}{\numberline {12}Diagonalizzabilit\`a}{55}{chapter.12}% 
+\contentsline {section}{\numberline {12.1}Matrici simili}{55}{section.12.1}% 
+\contentsline {subsection}{\numberline {12.1.1}Matrici rappresentative simili}{55}{subsection.12.1.1}% 
+\contentsline {subsection}{\numberline {12.1.2}Diagonalizzabilit\`a di una funzione}{55}{subsection.12.1.2}% 
+\contentsline {subsubsection}{Osservazione}{55}{section*.56}% 
+\contentsline {section}{\numberline {12.2}Autovalori e autovettori}{56}{section.12.2}% 
+\contentsline {subsection}{\numberline {12.2.1}Definizione}{56}{subsection.12.2.1}% 
+\contentsline {subsection}{\numberline {12.2.2}Autospazio}{56}{subsection.12.2.2}% 
+\contentsline {subsubsection}{Dimostrazione}{56}{section*.57}% 
+\contentsline {subsubsection}{Osservazioni}{56}{section*.58}% 
+\contentsline {subsection}{\numberline {12.2.3}Autovettori e diagonalizzabilit\`a}{56}{subsection.12.2.3}% 
+\contentsline {subsection}{\numberline {12.2.4}Autovalori e insiemi indipendenti}{56}{subsection.12.2.4}% 
+\contentsline {subsubsection}{Dimostrazione}{56}{section*.59}% 
+\contentsline {subsection}{\numberline {12.2.5}Polinomio caratteristico}{57}{subsection.12.2.5}% 
+\contentsline {subsubsection}{Definizione}{57}{section*.60}% 
+\contentsline {subsection}{\numberline {12.2.6}Polinomi caratteristici e basi}{57}{subsection.12.2.6}% 
+\contentsline {subsubsection}{Dimostrazione}{57}{section*.61}% 
+\contentsline {subsection}{\numberline {12.2.7}Molteplicit\`a algebrica e geometrica}{57}{subsection.12.2.7}% 
+\contentsline {subsubsection}{Molteplicit\`a algebrica}{57}{section*.62}% 
+\contentsline {subsubsection}{Molteplicit\`a geometrica}{58}{section*.63}% 
+\contentsline {subsubsection}{Legame tra molteplicit\`a algebrica e geometrica}{58}{section*.64}% 
+\contentsline {subsubsection}{Corollario}{58}{section*.65}% 
+\contentsline {section}{\numberline {12.3}Criteri di diagonalizzabilit\`a}{58}{section.12.3}% 
+\contentsline {subsubsection}{Dimostrazione}{58}{section*.66}% 
+\contentsline {subsection}{\numberline {12.3.1}Corollario}{59}{subsection.12.3.1}% 
+\contentsline {subsection}{\numberline {12.3.2}Matrici diagonalizzanti}{59}{subsection.12.3.2}% 
+\contentsline {subsection}{\numberline {12.3.3}Applicazioni}{59}{subsection.12.3.3}% 
+\contentsline {section}{\numberline {12.4}Endomorfismi simmetrici}{59}{section.12.4}% 
+\contentsline {subsection}{\numberline {12.4.1}Simmetria e matrice rappresentativa}{59}{subsection.12.4.1}% 
+\contentsline {subsubsection}{Dimostrazione}{60}{section*.67}% 
+\contentsline {subsection}{\numberline {12.4.2}Corollario}{60}{subsection.12.4.2}% 
+\contentsline {subsection}{\numberline {12.4.3}Osservazione}{60}{subsection.12.4.3}% 
+\contentsline {subsubsection}{Dimostrazione}{60}{section*.68}% 
+\contentsline {subsection}{\numberline {12.4.4}Il teorema spettrale}{60}{subsection.12.4.4}% 
+\contentsline {subsubsection}{Dimostrazione}{60}{section*.69}% 
+\contentsline {subsubsection}{Enunciato}{61}{section*.70}% 
+\contentsline {subsubsection}{Dimostrazione}{61}{section*.71}% 
+\contentsline {subsubsection}{Corollario}{61}{section*.72}% 

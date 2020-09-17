@@ -1,0 +1,46 @@
+\chapter{Lo spazio $\mathbb{R^n}$}
+L'insieme delle n-uple di numeri reali $\mathbb{R^n}=\{(a_1,a_2\cdots,a_n)|a_i\in\mathbb{R}\}$
+Un punto nello spazio $\mathbb{R^n}$ \`e indicato dalla n-upla di n elementi.
+\section{Operazioni tra n-uple}
+\begin{itemize}
+\item Somma: $a+b=(a_1+b_1; a_2+b_2;\cdots; a_n+b_n)$, \`e commutativa, associativa, esiste l'elemento neutro, l'ennupla nulla e l'elemento opposto.
+\item Prodotto per uno scalare: $\lambda a=(\lambda a_1; \lambda a_2; \cdots; \lambda a_n)$, \`e associativa, distributiva rispetto alla somma ha l'elemento neutro.
+\end{itemize}
+\section{Sottospazi di $\mathbf{R^n}$}
+Un sottoinsieme non vuoto $U\subset\mathbb{R^n}$ si dice sottospazio se \`e chiuso rispetto alle operazioni di $\mathbb{R^n}$, ovvero se: $\forall u_1, u_2\in U$
+\begin{itemize}
+\item $u_1+u_2\in U$
+\item $\lambda u_2\in U$
+\item La combinazione lineare $\lambda u_1+ \mu u_2\in U$
+\end{itemize}
+Se $U\subset\mathbb{R^n}$ \`e un sottospazio allora contiene l'n-upla nulla, infatti $u-u=0$\\
+Se $U\subset\mathbb{R^n}$ \`e un sottospazio che contiene un'n-upla non nulla, allora ne contiene infinite, tra cui l'ennupla nulla.
+\subsection{Sottospazio generato da vettori}
+Dati $v_1\cdots v_k \in \mathbb{R^n}$, l'insieme di tutte le loro combinazioni lineari \`e un sottospazio generato da $v_1\cdots v_k$ che si indica come $<v_1,\cdots,v_k>$
+o come Span($v_1,\cdots,v_k$) ($=\sum\limits_{i=1}^k \lambda_i v_i|\lambda_i\in\mathbb{R}$).
+\subsection{Spazio delle righe di A}
+Data $A\in M_{mxn}(\mathbb{R}$, lo spazio delle righe di A, R(A) \`e il sottospazio di $\mathbb{R^n}$ generato dalle righe di A pensate come elementi di $\mathbb{R^n}$.
+\subsection{Spazio delle colonne di A}
+Data $A\in M_{mxn}(\mathbb{R})$, lo spazio delle colonne di A, C(A) \`e il sottospazio di $\mathbb{R^m}$ generato dalle colonne di A pensate come elementi di $\mathbb{R^m}$.
+\subsection{Insiemi di generatori di un sottospazio}
+Se $U\subset\mathbb{R^n}$ sottospazio e $U=<v_1,\cdots,v_k>, \{v_1,\cdots,v_k\}$ insieme di generatori di U. $\{v_1,\cdots,v_k\}$ \`e un sistema di generatori di 
+$\mathbb{R^n}$ se e solo se $k\ge n$ e rg(A)=n A \`e la matrice che ha sulle colonne le componenti dei vettori generatori. $\sum\limits_{i=1}^k \lambda_i v_i=A\lambda_i$, 
+$\lambda$ vettore contenente i valori reali delle combinazioni lineari.
+\subsection{Descrizioni di sottospazio $U\subset\mathbb{R}, U=<v_1,\cdots,v_n>$}
+A matrice con le colonne composte dai vettori e lambda la matrice composta dai numeri,Data una n-upla, quando appartiene a U $x=A\lambda$, ovvero il sistema lineare $A
+\lambda=x$ ha almeno una soluzione. Ovvero se il $rg(A)=rg(A|x)$. Riduco a scalini ($A|x$) nella parte di A e si impone che $rg(A)=rg(A|x)$ in modo da trovare le equazioni 
+che definiscono un sottospazio.
+\section{Dipendenza e indipendenza lineare}
+Un insieme di n-uple$\{v_1,\cdots,k_k\}$ si dice linearmente dipendente se esistono $\lambda_1, \lambda_2,\cdots, \lambda_k$ non tutti nulli tali che $\lambda_1v_1+
+\lambda_2v_2,\cdots,+\lambda_kv_k=0$, si dice indipendente se ci\`o non accade, ovvero se l'unico modo di scrivere l'ennupla nulla come combinazione lineare \`e prendere
+tutti i coefficienti uguale a 0, ovvero se $\lambda_1v_1+\lambda_2v_2,\cdots,+\lambda_kv_k=0\Rightarrow\lambda_i=0\forall i=1,\cdots, k$. Ovvero \`e dipendente se il sistema
+che rappresenta il sottospazio vettoriale ha una soluzione non nulla ovvero se il rango di A \`e minore del numero di colonne, indipendente se ha solo la soluzione nulla, ovvero se il rango di A \`e uguale al numero di colonne. In $\mathbb{R^n}$ rg(A) numero di colonne implica che il numero di righe sia maggiore uguale del numero di colonne.
+In particolare se $\{v_1,\cdots,v_k\}$ sono indipendenti, allora $k\le n$. 
+\subsubsection{Osservazioni}
+Se l'insieme di ennuple che genera lo spazio vettoriale \`e dipendente si pu\`o ridurre eliminando gli elementi descrivibili come combinazione lineare di altre due ennuple. Gli elementi che si possono scrivere come combinazione lineare degli altri sono quelli sulle colonne senza pivot. Nella forma $rref(A)$ i coefficienti delle colonne prive di pivot, corrispondono ai coefficienti da utilizzare per scrivere la combinazione lineare del vettore posto in quella colonna in funzione dei vettori indipendenti, ovvero quelli posti nelle colonne aventi pivot.\\
+Un insieme di ennuple \`e un insieme di generatori e linearmente indipendente, allora $n=k=rg(A)$. Gli insiemi con queste propriet\`a si chiamano basi.
+\section{Le basi}
+Una base di $\mathbb{R^n}$ \`e un insieme di ennuple che sia un insieme di generatori linearmente indipendenti. \`E costituita da n elementi. La base canonica di 
+$\mathbb{R^n}$ \`e costituita dalle ennuple $(1,0,0\cdots,0)(0,1,0\cdots,0)\cdots(0,0,0\cdots,1)$, ovvero la matrice che costituisce \`e la matrice identica. Se B \`e base 
+allora ogni elemento di $\mathbb{R^n}$ si pu\`o scrivere come combinazione lineare degli elementi della base. Il sistema $A\lambda=v$ ha un'unica soluzione, il rango di A \`e 
+uguale a n. 

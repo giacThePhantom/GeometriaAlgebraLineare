@@ -1,0 +1,165 @@
+\BOOKMARK [0][-]{chapter.1}{Vettori geometrici nello spazio}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Operazioni tra vettori}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Somma di vettori}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Prodotto per uno scalare}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{Normalizzazione di un vettore}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.4}{Prodotto scalare tra vettori}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.5}{Proiezione di un vettore su un altro}{section.1.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Coordinate}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Operazioni considerando le coordinate}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.1.1}{Somma di due vettori}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.2}{Prodotto per uno scalare}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.3}{Modulo di un vettore}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.4}{Prodotto scalare}{section.2.1}% 13
+\BOOKMARK [0][-]{chapter.3}{Piani e rette nello spazio}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Il piano}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.1.1}{Determinare l'equazione di un piano partendo dal vettore normale e da un punto}{section.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.1.2}{Determinare l'equazione di un piano partendo da tre punti non allineati}{section.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.1.3}{Conversione tra equazione parametrica e cartesiana}{section.3.1}% 18
+\BOOKMARK [1][-]{section.3.2}{La retta}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.2.1}{Determinare l'equazione di una retta da un punto e da un vettore}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.2}{Fascio dei parametri di sostegno a una retta}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{Posizione reciproca}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{Due rette}{section.3.3}% 23
+\BOOKMARK [1][-]{section.3.4}{Due piani}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.5}{Retta e piano}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.6}{Le distanze}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.6.1}{Distanza tra due punti}{section.3.6}% 27
+\BOOKMARK [2][-]{subsection.3.6.2}{Distanza punto-piano}{section.3.6}% 28
+\BOOKMARK [2][-]{subsection.3.6.3}{Distanza punto retta}{section.3.6}% 29
+\BOOKMARK [2][-]{subsection.3.6.4}{Distanza tra due piani}{section.3.6}% 30
+\BOOKMARK [2][-]{subsection.3.6.5}{Distanza tra due rette}{section.3.6}% 31
+\BOOKMARK [0][-]{chapter.4}{Sistemi lineari}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Le ennuple}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.1.1}{Operazioni tra ennuple}{section.4.1}% 34
+\BOOKMARK [1][-]{section.4.2}{Le equazioni lineari}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.3}{I sistemi lineari}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.4}{Operazioni elementari di un sistema lineare}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.5}{Matrici nei sistemi lineari}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.5.1}{Operazioni elementari sulle matrici}{section.4.5}% 39
+\BOOKMARK [2][-]{subsection.4.5.2}{Matrici a scalini}{section.4.5}% 40
+\BOOKMARK [2][-]{subsection.4.5.3}{Metodo di risoluzione di un sistema lineare da una matrice \(algoritmo di Gauss-Jordan\)}{section.4.5}% 41
+\BOOKMARK [2][-]{subsection.4.5.4}{Forma a scalini ridotta per righe}{section.4.5}% 42
+\BOOKMARK [0][-]{chapter.5}{Matrici}{}% 43
+\BOOKMARK [1][-]{section.5.1}{Operazioni tra matrici}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.1.1}{Somma tra matrici}{section.5.1}% 45
+\BOOKMARK [2][-]{subsection.5.1.2}{Prodotto di una matrice per uno scalare}{section.5.1}% 46
+\BOOKMARK [2][-]{subsection.5.1.3}{Prodotto tra matrici}{section.5.1}% 47
+\BOOKMARK [2][-]{subsection.5.1.4}{Altra forma di operazioni sulle righe delle matrici}{section.5.1}% 48
+\BOOKMARK [1][-]{section.5.2}{La matrice inversa}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.2.1}{Unicit\340 della matrice inversa}{section.5.2}% 50
+\BOOKMARK [2][-]{subsection.5.2.2}{Prodotto di matrici invertibili}{section.5.2}% 51
+\BOOKMARK [2][-]{subsection.5.2.3}{Trovare la matrice inversa}{section.5.2}% 52
+\BOOKMARK [1][-]{section.5.3}{Matrici e sistemi lineari}{chapter.5}% 53
+\BOOKMARK [0][-]{chapter.6}{Lo spazio Rn}{}% 54
+\BOOKMARK [1][-]{section.6.1}{Operazioni tra n-uple}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.2}{Sottospazi di Rn}{chapter.6}% 56
+\BOOKMARK [2][-]{subsection.6.2.1}{Sottospazio generato da vettori}{section.6.2}% 57
+\BOOKMARK [2][-]{subsection.6.2.2}{Spazio delle righe di A}{section.6.2}% 58
+\BOOKMARK [2][-]{subsection.6.2.3}{Spazio delle colonne di A}{section.6.2}% 59
+\BOOKMARK [2][-]{subsection.6.2.4}{Insiemi di generatori di un sottospazio}{section.6.2}% 60
+\BOOKMARK [2][-]{subsection.6.2.5}{Descrizioni di sottospazio UR, U=<v1,\@let@token ,vn>}{section.6.2}% 61
+\BOOKMARK [1][-]{section.6.3}{Dipendenza e indipendenza lineare}{chapter.6}% 62
+\BOOKMARK [1][-]{section.6.4}{Le basi}{chapter.6}% 63
+\BOOKMARK [0][-]{chapter.7}{Spazi vettoriali}{}% 64
+\BOOKMARK [1][-]{section.7.1}{Gruppo}{chapter.7}% 65
+\BOOKMARK [1][-]{section.7.2}{Campo}{chapter.7}% 66
+\BOOKMARK [1][-]{section.7.3}{Spazio vettoriale}{chapter.7}% 67
+\BOOKMARK [1][-]{section.7.4}{R[x]}{chapter.7}% 68
+\BOOKMARK [1][-]{section.7.5}{Sottospazio}{chapter.7}% 69
+\BOOKMARK [0][-]{chapter.8}{Determinante}{}% 70
+\BOOKMARK [1][-]{section.8.1}{Sottomatrici}{chapter.8}% 71
+\BOOKMARK [1][-]{section.8.2}{Definizione di determinante}{chapter.8}% 72
+\BOOKMARK [1][-]{section.8.3}{Matrice triangolare alta}{chapter.8}% 73
+\BOOKMARK [1][-]{section.8.4}{Teorema di Laplace}{chapter.8}% 74
+\BOOKMARK [2][-]{subsection.8.4.1}{Conseguenze}{section.8.4}% 75
+\BOOKMARK [1][-]{section.8.5}{Teorema di Binet}{chapter.8}% 76
+\BOOKMARK [2][-]{subsection.8.5.1}{Corollario}{section.8.5}% 77
+\BOOKMARK [1][-]{section.8.6}{Determinante matrici associate ad operazioni}{chapter.8}% 78
+\BOOKMARK [2][-]{subsection.8.6.1}{Cambio del determinante dopo un'operazione elementare}{section.8.6}% 79
+\BOOKMARK [1][-]{section.8.7}{Determinante di una matrice ridotta a scalini}{chapter.8}% 80
+\BOOKMARK [1][-]{section.8.8}{Il prodotto vettoriale}{chapter.8}% 81
+\BOOKMARK [2][-]{subsection.8.8.1}{Propriet\340}{section.8.8}% 82
+\BOOKMARK [2][-]{subsection.8.8.2}{Dimostrazione della formula}{section.8.8}% 83
+\BOOKMARK [2][-]{subsection.8.8.3}{Prodotto misto}{section.8.8}% 84
+\BOOKMARK [2][-]{subsection.8.8.4}{Applicazioni nella geometria}{section.8.8}% 85
+\BOOKMARK [1][-]{section.8.9}{Determinanti e sistemi lineari}{chapter.8}% 86
+\BOOKMARK [2][-]{subsection.8.9.1}{Teorema di Cramer}{section.8.9}% 87
+\BOOKMARK [2][-]{subsection.8.9.2}{Corollario del teorema di Cramer}{section.8.9}% 88
+\BOOKMARK [0][-]{chapter.9}{Le basi}{}% 89
+\BOOKMARK [1][-]{section.9.1}{Definizione di base}{chapter.9}% 90
+\BOOKMARK [2][-]{subsection.9.1.1}{Esistenza della base}{section.9.1}% 91
+\BOOKMARK [2][-]{subsection.9.1.2}{Estrazione di una base da un sistema di generatori per il caso V=Rn}{section.9.1}% 92
+\BOOKMARK [1][-]{section.9.2}{Complemento a una base}{chapter.9}% 93
+\BOOKMARK [2][-]{subsection.9.2.1}{Corollario 1}{section.9.2}% 94
+\BOOKMARK [2][-]{subsection.9.2.2}{Corollario 2}{section.9.2}% 95
+\BOOKMARK [1][-]{section.9.3}{Dimensione di uno spazio vettoriale}{chapter.9}% 96
+\BOOKMARK [1][-]{section.9.4}{Completare a una base un sistema lineare in Rn}{chapter.9}% 97
+\BOOKMARK [1][-]{section.9.5}{Coordinate}{chapter.9}% 98
+\BOOKMARK [2][-]{subsection.9.5.1}{Linearit\340 e biunivocit\340 della funzione delle T}{section.9.5}% 99
+\BOOKMARK [2][-]{subsection.9.5.2}{La funzione T e la consevazione delle propriet\340 degli insiemi di vettori}{section.9.5}% 100
+\BOOKMARK [2][-]{subsection.9.5.3}{Determinare la base di un qualsiasi spazio vettoriale}{section.9.5}% 101
+\BOOKMARK [1][-]{section.9.6}{Spazio delle righe e delle colonne di una matrice}{chapter.9}% 102
+\BOOKMARK [2][-]{subsection.9.6.1}{Dimensione dello spazio delle righe di una matrice in forma a scalini}{section.9.6}% 103
+\BOOKMARK [2][-]{subsection.9.6.2}{Dimensione dello spazio delle righe di una matrice}{section.9.6}% 104
+\BOOKMARK [2][-]{subsection.9.6.3}{Corollario}{section.9.6}% 105
+\BOOKMARK [1][-]{section.9.7}{Interpolazione polinomiale}{chapter.9}% 106
+\BOOKMARK [2][-]{subsection.9.7.1}{Basi di Lagrange}{section.9.7}% 107
+\BOOKMARK [0][-]{chapter.10}{Funzioni lineari}{}% 108
+\BOOKMARK [1][-]{subsection.10.0.1}{Composte di funzioni lineari}{chapter.10}% 109
+\BOOKMARK [1][-]{section.10.1}{Nucleo}{chapter.10}% 110
+\BOOKMARK [2][-]{subsection.10.1.1}{Nucleo e propriet\340 di f}{section.10.1}% 111
+\BOOKMARK [1][-]{section.10.2}{Immagine}{chapter.10}% 112
+\BOOKMARK [2][-]{subsection.10.2.1}{Immagine e propriet\340 di f}{section.10.2}% 113
+\BOOKMARK [1][-]{section.10.3}{Funzioni lineari definite da matrici}{chapter.10}% 114
+\BOOKMARK [2][-]{subsection.10.3.1}{Composizione}{section.10.3}% 115
+\BOOKMARK [2][-]{subsection.10.3.2}{Invertibilit\340}{section.10.3}% 116
+\BOOKMARK [2][-]{subsection.10.3.3}{Nucleo e immagine}{section.10.3}% 117
+\BOOKMARK [1][-]{section.10.4}{Teorema della nullit\340 pi\371 rango}{chapter.10}% 118
+\BOOKMARK [2][-]{subsection.10.4.1}{Corollario}{section.10.4}% 119
+\BOOKMARK [2][-]{subsection.10.4.2}{Osservazione}{section.10.4}% 120
+\BOOKMARK [1][-]{section.10.5}{Matrici rappresentative}{chapter.10}% 121
+\BOOKMARK [2][-]{subsection.10.5.1}{Definizione di matrice rappresentativa}{section.10.5}% 122
+\BOOKMARK [2][-]{subsection.10.5.2}{Utilizzo delle matrici rappresentative}{section.10.5}% 123
+\BOOKMARK [2][-]{subsection.10.5.3}{Osservazione}{section.10.5}% 124
+\BOOKMARK [2][-]{subsection.10.5.4}{Cambiamenti di base}{section.10.5}% 125
+\BOOKMARK [0][-]{chapter.11}{Spazi vettoriali euclidei}{}% 126
+\BOOKMARK [1][-]{section.11.1}{Prodotto scalare}{chapter.11}% 127
+\BOOKMARK [2][-]{subsection.11.1.1}{Esempi di spazi vettoriali euclidei}{section.11.1}% 128
+\BOOKMARK [1][-]{section.11.2}{Disuguaglianza di Cauchy-Schwartz}{chapter.11}% 129
+\BOOKMARK [1][-]{section.11.3}{La norma}{chapter.11}% 130
+\BOOKMARK [2][-]{subsection.11.3.1}{Osservazione}{section.11.3}% 131
+\BOOKMARK [2][-]{subsection.11.3.2}{Propriet\340 della norma}{section.11.3}% 132
+\BOOKMARK [1][-]{section.11.4}{Distanza tra due vettori}{chapter.11}% 133
+\BOOKMARK [2][-]{subsection.11.4.1}{Propriet\340 della distanza}{section.11.4}% 134
+\BOOKMARK [1][-]{section.11.5}{Ortogonalit\340}{chapter.11}% 135
+\BOOKMARK [2][-]{subsection.11.5.1}{Ortogonalit\340 e indipendenza lineare}{section.11.5}% 136
+\BOOKMARK [2][-]{subsection.11.5.2}{Corollario}{section.11.5}% 137
+\BOOKMARK [2][-]{subsection.11.5.3}{Proiezioni}{section.11.5}% 138
+\BOOKMARK [2][-]{subsection.11.5.4}{Basi ortonormali}{section.11.5}% 139
+\BOOKMARK [2][-]{subsection.11.5.5}{Complemento ortogonale}{section.11.5}% 140
+\BOOKMARK [1][-]{section.11.6}{Isomerie e matrici ortogonali}{chapter.11}% 141
+\BOOKMARK [2][-]{subsection.11.6.1}{Matrici ortogonale}{section.11.6}% 142
+\BOOKMARK [2][-]{subsection.11.6.2}{Condizione affinch\350 una funzione sia un'isomeria}{section.11.6}% 143
+\BOOKMARK [2][-]{subsection.11.6.3}{Osservazioni}{section.11.6}% 144
+\BOOKMARK [0][-]{chapter.12}{Diagonalizzabilit\340}{}% 145
+\BOOKMARK [1][-]{section.12.1}{Matrici simili}{chapter.12}% 146
+\BOOKMARK [2][-]{subsection.12.1.1}{Matrici rappresentative simili}{section.12.1}% 147
+\BOOKMARK [2][-]{subsection.12.1.2}{Diagonalizzabilit\340 di una funzione}{section.12.1}% 148
+\BOOKMARK [1][-]{section.12.2}{Autovalori e autovettori}{chapter.12}% 149
+\BOOKMARK [2][-]{subsection.12.2.1}{Definizione}{section.12.2}% 150
+\BOOKMARK [2][-]{subsection.12.2.2}{Autospazio}{section.12.2}% 151
+\BOOKMARK [2][-]{subsection.12.2.3}{Autovettori e diagonalizzabilit\340}{section.12.2}% 152
+\BOOKMARK [2][-]{subsection.12.2.4}{Autovalori e insiemi indipendenti}{section.12.2}% 153
+\BOOKMARK [2][-]{subsection.12.2.5}{Polinomio caratteristico}{section.12.2}% 154
+\BOOKMARK [2][-]{subsection.12.2.6}{Polinomi caratteristici e basi}{section.12.2}% 155
+\BOOKMARK [2][-]{subsection.12.2.7}{Molteplicit\340 algebrica e geometrica}{section.12.2}% 156
+\BOOKMARK [1][-]{section.12.3}{Criteri di diagonalizzabilit\340}{chapter.12}% 157
+\BOOKMARK [2][-]{subsection.12.3.1}{Corollario}{section.12.3}% 158
+\BOOKMARK [2][-]{subsection.12.3.2}{Matrici diagonalizzanti}{section.12.3}% 159
+\BOOKMARK [2][-]{subsection.12.3.3}{Applicazioni}{section.12.3}% 160
+\BOOKMARK [1][-]{section.12.4}{Endomorfismi simmetrici}{chapter.12}% 161
+\BOOKMARK [2][-]{subsection.12.4.1}{Simmetria e matrice rappresentativa}{section.12.4}% 162
+\BOOKMARK [2][-]{subsection.12.4.2}{Corollario}{section.12.4}% 163
+\BOOKMARK [2][-]{subsection.12.4.3}{Osservazione}{section.12.4}% 164
+\BOOKMARK [2][-]{subsection.12.4.4}{Il teorema spettrale}{section.12.4}% 165

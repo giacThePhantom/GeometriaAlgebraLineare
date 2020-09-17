@@ -1,0 +1,162 @@
+\chapter{Diagonalizzabilit\`a}
+\section{Matrici simili}
+Due matrici quadrate $A,B\in M_n(\mathbb{R})$ si dicono simili se $\exists C\in M_n(\mathbb{R}):A=C^{-1}BC$.
+\subsection{Matrici rappresentative simili}
+Sia $f:V\rightarrow V$ un endomorfismo e sia $A=M_C(f)$ la sua matrice rappresentativa rispetto alla base $C$ di $V$, allora:
+\begin{itemize}
+\item Se $\beta$ \`e una base di $V$ e $B=M_\beta(f)$ allora $A$ e $B$ sono simili.
+\item Se $B$ \`e una matrice simile ad $A$ allora esiste una base $\beta$ tale che $M_\beta(f)=B$.
+\end{itemize}
+\subsection{Diagonalizzabilit\`a di una funzione}
+Una funzione lineare $f:V\rightarrow V$ si dice diagonalizzabile se esiste una base $\beta$ di $V$ tale che la matrice rappresentativa $M_\beta(f)$ sia diagonale. 
+Equivalentemente $f$ \`e diagonalizzabile se la sua matrice rappresentativa rispetto ad una qualsiasi base \`e simile ad una matrice diagonale.
+\subsubsection{Osservazione}
+Si osservi che se esiste una base $\beta=\{\underline{b_1},\cdots,\underline{b_n}\}$ rispetto alla quale la matrice rappresentativa di $f$ \`e diagonale e chiamando $\lambda_1,
+\cdots,\lambda_n$ gli elementi della diagonale si ha che $f(\underline{b_i})=\lambda_i\underline{b_i}\;\;\forall i=1,\cdots,n$, ovvero l'immagine di ogni vettore della base \`e 
+un suo multiplo.
+\section{Autovalori e autovettori}
+\subsection{Definizione}
+Sia $f:V\rightarrow V$ una funzione, un vettore $\underline{v}\neq\underline{0}$ si dice autovettore di $f$ se esiste uno scalare $\lambda$ tale che $f(\underline{v})=\lambda
+\underline{v}$.
+Uno scalare $\lambda$ si dice autovalore di $f$ se esiste un vettore $\underline{v}\neq\underline{0}$ tale che $f(\underline{v})=\lambda\underline{v}$.
+\subsection{Autospazio}
+Sia $f:V\rightarrow V$ una funzione lineare e $\lambda$ un autovalore di $f$, si dice autospazio relativo all'autovalore $\lambda$ il sottospazio di dimensione positiva:
+\begin{equation}
+E(\lambda)=\{\underline{v}\in V|f(\underline{v})=\lambda\underline{v}\}
+\end{equation}
+\subsubsection{Dimostrazione}
+Per verificare che $E(\lambda)$ sia un sottospazio \`e sufficiente considerare la funzione lineare $f_\lambda:V\rightarrow V$ definita ponendo $f_\lambda (\underline{v})=
+f(\underline{v})-\lambda\underline{v}$ e verificare che $E(\lambda)=Ker(f_\lambda)$.
+\subsubsection{Osservazioni}
+\begin{itemize}
+\item L'autospazio $E(\lambda)$ \`e costituito dagli autovettori relativi a $\lambda$ e dal vettore nullo.
+\item Se $0$ \`e un autovalore di $f$, l'autospazio di $f$ $E(0)$ coincide con il nucleo di $f$, In particolare $0$ \`e un autovalore di $f$ solo se la funzione non \`e 
+iniettiva.
+\end{itemize}
+\subsection{Autovettori e diagonalizzabilit\`a}
+Una funzione lineare $f:V\rightarrow V$ \`e diagonalizzabile se e solo se esiste una base di $V$ formata da autovettori di $f$.
+\subsection{Autovalori e insiemi indipendenti}
+Sia $f:V\rightarrow V$ una funzione lineare e $\lambda_1,\cdots,\lambda_k$ (con $\lambda_i\neq\lambda_j$ se $i\neq j$) autovalori di $f$. Siano $\underline{v_1},\cdots,
+\underline{v_k}$ tali che $f(\underline{v_i})=\lambda_i\underline{v_i}$. Allora l'insieme $\{\underline{v_1},\cdots,\underline{v_k}\}$ \`e linearmente indipendente.
+\subsubsection{Dimostrazione}
+La dimostrazione segue il principio di induzione: si prova che per $k=1$ $\underline{v_1}\neq \underline{0}$ per la definizione di autovettore, quindi $\{\underline{v_1}\}$ \`e 
+indipendente. Si supponga ora che la tesi sia vera per $k-1$ vettori e la si provi per $k$. Si scriva pertanto la combinazione lineare dei vettori e la si ponga uguale al vettore 
+nullo: $\mu_1\underline{v_1}+\cdots+\mu_k\underline{v_K}=\underline{0}$. Si vuole mostrare che tutti i coefficienti sono nulli. Applicando $f$ si ottiene: $\mu_1\lambda_1 
+\underline{v_1}+\cdots+\mu_k\lambda_k\underline{v_k}=\underline{0}$. Se invece la si moltiplica per $\lambda_1$ si ottiene: $\mu_1\lambda_1 \underline{v_1}+\cdots+\mu_k\lambda_1
+\underline{v_k}=\underline{0}$. Facendo la differenza tra queste due equazioni si ottiene: $\mu_2(\lambda_2-\lambda_1)\underline{v_2}+\cdots+\mu_k(\lambda_k-\lambda_1)
+\underline{v_k}=\underline{0}$. Per l'ipotesi induttiva $\{\underline{v_2},\cdots,\underline{v_k}\}$ \`e un insieme indipendente. Segue quindi che $\mu_i(\lambda_i-\lambda_1)=0$ 
+per $i=2,\cdots,l$. Poich\`e $\lambda_i\neq \lambda_1$ se $i\neq 1$ si deve avere necessariamente $\mu_i=0\;\;i=2,\cdots,k$. Pertanto la differenza si riduce a $\mu_1
+\underline{v_1}=\underline{0}$ che implica $\mu_1=0$.
+\subsection{Polinomio caratteristico}
+Per trovare gli autovalori della funzione lineare $f:V\rightarrow V$ si scelga una base $\Gamma=\{\underline{a_1},\cdots,\underline{a_n}\}$ di $V$ e sia $A=M_\Gamma(f)$ la 
+matrice rappresentativa di $f$ rispetto a tale base. Uno scalare $\lambda$ \`e un autovalore di $f$ se e solo se esiste $\underline{v}\in V$ tale che $f(\underline{v})=\lambda
+\underline{v}$, ovvero se esiste una ennupla $\underline{x}$ tale che $A\underline{x}=\lambda\underline{x}$. Poich\`e $\lambda\underline{x}=
+\lambda I\underline{x}$, dove $I$ \`e la matrice identica di ordine $n$ si pu\`o riscrivere la condizione come $(A-\lambda I)\underline{x}=\underline{0}$. Ovvero $\lambda$ \`e un
+autovalore di $f$ se e solo se il sistema lineare omogeneo $(A-\lambda I)\underline{x}=\underline{0}$ ha una soluzione non banale, ovvero se $det((A-\lambda I))=0$.
+\subsubsection{Definizione}
+Sia $f:V\rightarrow V$ una funzione lineare e $A$ la matrice rappresentativa rispetto alla base $\Gamma=\{\underline{a_1},\cdots,\underline{a_n}\}$ di $V$. Il polinomio 
+caratteristico \`e il polinomio:
+\begin{equation}
+\chi_f(\lambda)=det((A-\lambda I))
+\end{equation}
+Di grado pari alla dimensione di $V$. Gli autovalori di $f$ sono le radici del polinomio caratteristico, ovvero le soluzioni dell'equazione $\chi_f(\lambda)=0$. 
+\subsection{Polinomi caratteristici e basi}
+Il polinomio caratteristico \`e ben definito, ovvero non dipende dalla base utilizzata per calcolarlo.
+\subsubsection{Dimostrazione}
+Sia $\beta=\{\underline{b_1},\cdots,\underline{b_n}\}$ un'altra base di $V$ e $B$ la matrice rappresentativa di $f$ per tale base. Posto $C=M_\Gamma^\beta$, si ha: $B=C^{-1}AC$,
+da ci\`o segue: $B-\lambda I=C^{-1}AC-\lambda I=C^{-1}AC-\lambda C^{-1}IC=C^{-1}(A-\lambda I)C$, perci\`o per il teorema di Binet: $det(B-\lambda I)=\frac{1}{det(C)}det(A-\lambda 
+I)det(C)=det(A-\lambda I)$.
+\subsection{Molteplicit\`a algebrica e geometrica}
+\subsubsection{Molteplicit\`a algebrica}
+Sia $f:V\rightarrow V$ una funzione lineare e $\lambda_0$ un autovalore di $f$. La molteplicit\`a algebrica di $\lambda_0$. denotata con $a(\lambda_0)$ \`e la molteplicit\`a di 
+$\lambda_0$ come soluzione di $\chi_f(\lambda)$,
+\subsubsection{Molteplicit\`a geometrica}
+Sia $f:V\rightarrow V$ una funzione lineare e $\lambda_0$ un autovalore di $f$. La molteplicit\`a geometrica di $\lambda_0$. denotata con $g(\lambda_0)$ \`e la dimensione dell'
+autospazio $E(\lambda_0)$. \`E un valore sempre maggiore uguale a $1$.
+\subsubsection{Legame tra molteplicit\`a algebrica e geometrica}
+Sia $f:V\rightarrow V$ una funzione lineare e $\lambda_0$ un autovalore di $f$. Allora:
+\begin{equation}
+1\le g(\lambda_0)\le a(\lambda_0)
+\end{equation}
+\textbf{Dimostrazione:}
+Sia $g=g(\lambda_0)$ e $\Gamma=\{\underline{v_1},\cdots,\underline{v_g}\}$ una base dell'autospazio $E(\lambda_0)$. Si completi $\Gamma$ rispetto ad una base $B$ di $V$, $B=\{
+\underline{v_1},\cdots,\underline{v_g},\underline{v_{g+1}},\cdots,\underline{v_n}\}$. Si trovi la matrice rappresentativa di $f$ rispetto a tale base e si trova che: 
+$\chi_f(\lambda)=(\lambda_0-\lambda)^gdet(B-\lambda I)$, da cui si pu\`o verificare che $a(\lambda_0)\le g(\lambda_0)$.
+\subsubsection{Corollario}
+Sia $f:V\rightarrow V$ una funzione lineare e $\lambda_0$ un autovalore di $f$ tale che $a(\lambda_0)=1$, allora $a(\lambda_0)=g(\lambda_0)$.
+\section{Criteri di diagonalizzabilit\`a}
+Una funzione lineare $f:V\rightarrow V$ \`e diagonalizzabile se e solo se il suo polinomio caratteristico $\chi_f(\lambda)$ \`e totalmente riducibile (si pu\`o fattorizzare come
+prodotto di polinomi di primo grado) e per ogni autovalore $\lambda_i$ si ha $a(\lambda_i)=g(\lambda_i)$.
+\subsubsection{Dimostrazione}
+Supponendo che $f$ sia diagonalizzabile si ha una base $B=\{\underline{v_1},\cdots,\underline{v_n}\}$ costituita da autovettori di $f$. La matrice rappresentativa $M_B(f)$ \`e 
+una matrice diagonale, con sulla diagonale autovettori di $f$. Il polinomio caratteristico \`e pertanto totalmente riducibile e si scrive come $\prod\limits_{i=1}^r(\lambda-
+\lambda_i)^{a(\lambda_i)}$. La matrice di $f_{\lambda_i}=f-\lambda_i I$ ha chiaramente un numero di zeri pari al numero di volte in cui compare l'autovalore $\lambda-i$, ovvero 
+pari alla sua molteplicit\`a algebrica, ovvero $g(\lambda_i)=dim(Ker(f_{\lambda_i}))=a(\lambda_i)$. Viceversa, se $\chi_f$ \`e totalmente riducibile, allora $\sum\limits_{i=1}^r
+a(\lambda_i)=dim(V)$, inoltre, essendo $a(\lambda_i)=g(\lambda_i)$ si ha $\sum\limits_{i=1}^rg(\lambda_i)=dim(V)$. Si ponga $g_i=g(\lambda_i)$ e si considerino $\Gamma_1=
+\{\underline{a_{11}},\cdots,\underline{a_{1g_1}}\},\cdots,\Gamma_r=\{\underline{a_{r1}},\cdots,\underline{a_{rg_r}}\}$ basi dei sottospazi $E(\lambda_1),\cdots,E(\lambda_r)$. Per
+concludere basta dimostrare che l'unione delle basi $\Gamma_1,\cdots,\Gamma_r$ \`e una base di $V$. Poich\`e si tratta di $dim(V)$ vettori, \`e sufficiente dimostrare la loro 
+indipendenza lineare, $\mu_{11}\underline{a_{11}}+\cdots+\mu_{1g_1}\underline{a_{1g_1}}+\cdots+\mu_{r1}\underline{a_{r1}}+\cdots+\mu_{rg_1}\underline{a_{rg_1}}=\underline{0}$,
+raggruppando i vettori che appartengono allo stesso autospazio e ponendo $\underline{w_i}=(\mu_{i1}\underline{a_{i1}}+\cdots+\mu_{ig_1}\underline{a_{ig_1}})$. Poich\`e i vettori 
+$\underline{w_i}$ appartengono ad autospazi diversi \`e stato precedentemente dimostrato che essi siano indipendenti, si deve necessariamente avere $\underline{w_i}=\underline{0}
+\;\;i=1,\cdots,r$. Essendo ogni vettore $\underline{w}$ composto da una base anche questi elementi sono indipendenti, pertanto i vettori di $A$ sono indipendenti.
+\subsection{Corollario}
+Sia $f:V\rightarrow V$ una funzione lineare tale che il polinomio caratteristico $\chi_f$ sia totalmente riducibile, e per ogni autovalore $\lambda_i$ si abbia $a(\lambda_i)=1$, 
+allora $f$ \`e diagonalizzabile.
+\subsection{Matrici diagonalizzanti}
+Sia $f:V\rightarrow V$ una funzione diagonalizzabile e sia $A$ la sua matrice rappresentativa rispetto alla base $\Gamma$, si \`e dimostrato come sia possibile trovare le 
+componenti degli autovettori di $f$ sulla base $\Gamma$ come soluzioni di sistemi omogenei determinati dagli autovalori di $f$. Sia $B$ una base di formata da autovettori di $f$, 
+la matrice di cambio di base $M_B^\Gamma$ non \`e altro che la matrice che ha sulle colonne le componenti sulla base $\Gamma$ degli autovettori stessi.
+\subsection{Applicazioni}
+Dato un endomorfismo $f:V\rightarrow V$, la sua potenza $f^k$ \`e definita come la composizione $f\circ f\circ f\cdots$ per $k$ volte. Se $\Gamma$ \`e una base di $V$ e $A=M_
+\Gamma(f)$ \`e la matrice rappresentativa di $f$ rispetto alla base $\Gamma$ allora la matrice rappresentativa di $f^k$ rispetto alla stessa base sar\`a $A^k$. Se la matrice $A$ 
+\`e diagonale, allora basta elevare a $k$ gli elementi della diagonale. Anche se la matrice \`e simile ad una matrice diagonale, si \`e visto come essendo $\beta$ una base di $V$ 
+costituita da autovettori di $f$, allora se $B=M_\beta(f)$ la matrice $B$ \`e diagonale e ha sulla diagonale gli autovalori, ordinati come gli elementi di $\beta$. Si \`e visto
+come $B=C^{-1}AC$, dove $C$ \`e la matrice le cui colonne sono le componenti degli elementi di $\beta$. Segue che $A=CBC^{-1}$, perci\`o: $A^k=(CBC^{-1})(CBC^{-1})
+\cdots(CBC^{-1})=CB^kC^{-1}$.
+\section{Endomorfismi simmetrici}
+Sia $V$ uno spazio vettoriale euclideo, la funzione $f:V\rightarrow V$ \`e detta simmetrica o autoaggiunta se $f(\underline{u}\underline{v})=\underline{u}f(\underline{v})\;\;
+\forall \underline{v}\underline{u}\in V$.
+\subsection{Simmetria e matrice rappresentativa}
+Sia $V$ uno spazio vettoriale euclideo e $f:V\rightarrow V$ una funzione lineare e sia $A$ la sua matrice rappresentativa rispetto ad una base ortonormale di $V$, allora $f$ \`e 
+simmetrica se e solo se $A$ \`e una matrice simmetrica. 
+\subsubsection{Dimostrazione}
+Il termina $a_{ij}$ della matrice rappresentativa di $f$ \`e dato dalla componente i-esima dell'immagine del j-esimo vettore della base. Come si \`e precedentemente dimostrato, 
+$a_{ij}=f(\underline{a_j})\underline{a_i}$ e $a_{ji}=f(\underline{a_i})\underline{a_j}$. Se $f$ \`e simmetrica $a_{ij}=a_{ji}$ e quindi $A$ \`e simmetrica. Se $A$ \`e simmetrica
+la simmetria di $f$ segue dalle due eguaglianze prima esplicitate e dalla linearit\`a di $f$, infatti se $\underline{u}=\sum\limits_{i=1}^nu_i\underline{a_i}$ e $\underline{v}= 
+\sum\limits_{j=1}^nv_j\underline{a_j}$, si ha $f(\underline{u})\underline{v}=\sum\limits_{i=1}^nu_if(\underline{a_i})\sum\limits_{j=1}^nv_jf(\underline{a_j})=
+\sum\limits_{i=1}^n\sum\limits_{j=1}^nu_iv_jf(\underline{a_i})\underline{a_j}=\sum\limits_{i=1}^n\sum\limits_{j=1}^nu_iv_j\underline{a_i}f(\underline{a_j})=\sum\limits_{i=1}^nu_i
+\underline{a_i}\sum\limits_{j=1}^nv_jf(\underline{a_j})=\underline{u}f(\underline{v})$.
+\subsection{Corollario}
+Si consideri lo spazio vettoriale euclideo $\mathbb{R^n}$ con il prodotto scalare canonico, e $f:\mathbb{R^n}\rightarrow\mathbb{R^n}$ una funzione lineare, allora $f$ \`e 
+simmetrica se e solo se la sua matrice rappresentativa rispetto alla base canonica di $\mathbb{R^n}$ \`e simmetrica.
+\subsection{Osservazione}
+Sia $V$ uno spazio vettoriale euclideo, $f:V\rightarrow V$ una funzione lineare simmetrica e $\lambda_1\neq \lambda_2$ autovalori di $f$. Siano $\underline{v_1}\in E(\lambda_1)$ e $\underline{v_2}\in E(\lambda_2)$, allora $\underline{v_1}\underline{v_2}=0$.
+\subsubsection{Dimostrazione}
+Da $f(\underline{v_1}\underline{v_2})=\underline{v_1}f(\underline{v_2})$ si ottiene $\lambda_1\underline{v_1}\underline{v_2}=\underline{v_1}\lambda_2\underline{v_2}$, perci\`o 
+$(\lambda_1-\lambda_2)\underline{v_1}\underline{v_2}=0$, da cui la tesi.
+\subsection{Il teorema spettrale}
+Sia $V$ uno spazio vettoriale euclideo e $f:V\rightarrow V$ una funzione lineare simmetrica, allora il polinomio caratteristico $\chi_f(\lambda)$ \`e totalmente riducibile.
+\subsubsection{Dimostrazione}
+Per il teorema fondamentale dell'algebra $\chi_f(\lambda)$ \`e totalmente riducibile in $\mathbb{C}$, basta perci\`o mostrare che ogni sua radice complessa \`e reale. Siano $A$
+una matrice rappresentativa di $f$ rispetto a una base ortonormale $\Gamma$ e $\lambda\in\mathbb{C}$ un autovalore di $f$, $\underline{v}$ un un autovettore in $E(\lambda)$ e 
+$\underline{x}$ il vettore delle sue coordinate su $\Gamma$. Da $A\underline{x}=\lambda\underline{x}$, trasponendo e prendendo il suo coniugato si ottiene: $\bar{\underline{x}^T}
+A=\bar{\lambda}\bar{\underline{x}^T}$, perci\`o moltiplicando a destra per il vettore colonna $\underline{x}$ si ottiene $\bar{\underline{x}^T}A\underline{x}=\bar{\lambda}
+\bar{\underline{x}^T}\underline{x}=\bar{\lambda}\sum\limits_{i=1}^n|x_i|^2$. Moltiplicando invece a sinistra l'uguaglianza per $\bar{\underline{x}^T}$ si ottiene 
+$\bar{\underline{x}^T}A\underline{x}=\lambda\bar{\underline{x}^T}\underline{x}=\lambda\sum\limits_{i=1}^n|x_i|^2$. Si eguaglino le due espressioni e si ottiene $\lambda=
+\bar{\lambda}$, ovvero $\lambda$ \`e un numero reale. 
+\subsubsection{Enunciato}
+Sia $V$ uno spazio vettoriale euclideo e $f:V\rightarrow V$ una funzione lineare simmetrica, allora esiste una base ortonormale di $V$ costituita da autovettori di $f$, in 
+particolare $f$ \`e diagonalizzabile.\\
+\subsubsection{Dimostrazione}
+La dimostrazione avviene per induzione su $dim(V)$. Se $dim(V)=1$, dato un qualsiasi vettore $\underline{v_1}\neq\underline{0}$, la sua normalizzazione \`e un autovettore e 
+costituisce una base ortonormale di $V$. Si supponga ora vera la tesi per $dim(V)=n-1$ e attraverso quella si provi $dim(V)=n$. Per il lemma precedentemente dimostrato esiste 
+$\lambda$ autovalore reale di $f$, sia $\underline{a_1}$ un autovettore relativo a $\lambda$ di norma unitaria, sia $U$ il sottospazio ortogonale ad $\underline{a_1}$, tale 
+sottospazio ha dimensione $n-1$ per i teoremi precedentemente dimostrati, si osservi che $\forall \underline{u}\in U$ si ha $f(\underline{u})\subset U$, infatti:
+$f(\underline{u})\underline{a_1}-\underline{u}f(\underline{a_1})=\lambda\underline{u}\underline{a_1}=0$. Si pu\`o considerare la funzione $f:U\rightarrow U$ data dalla 
+restrizione di $f$. Per l'ipotesi induttiva esiste tuttavia una base ortonormale $\{\underline{a_2}\cdots,\underline{a_n}\}$ di $U$ costituita da autovettori di $f$. La
+base cercata \`e quindi $\Gamma=\{\underline{a_1},\underline{a_2},\cdots,\underline{a_n}\}$.
+\subsubsection{Corollario}
+Si consideri come spazio vettoriale euclideo $\mathbb{R^n}$ con il prodotto scalare canonico, sia $\Gamma=\{\underline{a_1}\cdots,\underline{a_n}\}$ una base ortonormale di
+$\mathbb{R^n}$ e sia $\beta$ la base canonica di $\mathbb{R^n}$ e $C=M_\Gamma^\beta$ la matrice di cambiamento di base. L'ortonormalit\`a della base $\Gamma$ \`e equivalente
+alle condizioni $C^TC=Id=CC^T$, ovvero l'inversa della matrice di transizione \`e la sua trasposta. Perci\`o una matrice reale simmetria $A$ \`e ortogonalmente simile ad una 
+matrice diagonale, ovvero esiste una matrice diagonale $C$ tale che $C^{-1}AC$ \`e una matrice diagonale .

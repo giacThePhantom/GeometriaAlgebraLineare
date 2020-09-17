@@ -1,0 +1,156 @@
+\chapter{Le basi}
+Una base di un sottospazio vettoriale finitamente generato \`e un insieme ordinato di vettori che sia un sistema di generatori linearmente indipendente. La scelta di una 
+base permette di associare ad ogni elemento dello spazio vettoriale una ennupla di $\mathbb{R^n}$ , dove $n$ è il numero di vettori che formano la base. In tal modo si 
+conservano le operazioni dello spazio vettoriale e permette di ricondurre un problema in uno spazio vettoriale qualsiasi al problema corrispondente in $\mathbb{R^n}$. Il ruolo di una base in uno spazio vettoriale \`e analogo a quello di un sistema di riferimento per l'insieme dei vettori
+geometrici nello spazio. Inoltre basi diverse dello stesso spazio vettoriale possiedono lo stesso numero di elementi (dimensione dello spazio).
+\section{Definizione di base}
+Sia $V$ uno spazio vettoriale reale finitamente generato. Un insieme ordinato di vettori $\beta=\{\underline{b_1},\underline{b_2},\cdots, \underline{b_n}\}$ \`e detto base 
+di $v$ se \`e un sistema di generatori linearmente indipendente.
+\subsection{Esistenza della base}
+Se $V\neq \{\underline{0}\}$ uno spazio vettoriale reale finitamente generato, allora:
+\begin{itemize}
+\item $V$ ha una base
+\item Un sistema di vettori $\beta=\{\underline{b_1},\underline{b_2},\cdots, \underline{b_n}\}$ \`e una base se e solo se ogni $\underline{v}\in V$ si scrive in modo unico
+come combinazione lineare di elementi di $\beta$.
+\end{itemize}
+\subsubsection{Dimostrazione}
+Si prenda un sistema di generatori $\{\underline{v_1},\cdots,\underline{v_m}\}$ per $V$, esso esiste in quanto $V$ \`e finitamente generato. Se tale sistema \`e linearmente
+indipendente allora costituisce una base di $V$, altrimenti esiste un indice $i\in\{1,\cdots,m\}$ tale che $Span(\underline{v_1},\cdots,\underline{v_{i-1}},\underline{v_{i
++1}},\cdots,\underline{v_m})=Span(\underline{v_1},\cdots,\underline{v_{m-1}})=V$. Se il nuovo insieme \`e linearmente indipendente si \`e trovata una base, altrimenti si ripeta
+il procedimento.\\
+Se $\beta=\{\underline{b_1},\underline{b_2},\cdots, \underline{b_n}\}$ \`e una base allora ogni vettore si pu\`o scrivere come combinazione lineare di elementi di $\beta$ in 
+quanto \`e un sistema di generatori, mentre l'unicit\`a segue dall'indipendenza lineare.\\
+Se ogni vettore si scrive in modo unico come combinazione lineare di elementi di $\beta$ quest'ultimo \`e un insieme di generatori, l'indipendenza lineare segue 
+dall'`unicit\`a di scrittura del vettore nullo.
+\subsubsection{Osservazione}
+Dato uno spazio vettoriale $V$ finitamente generato si pu\`o mostrare che ogni suo sottospazio \`e finitamente generato. Dato quindi $\{\underline{0}
+\}\neq U\subset V$ sottospazio, questo ha una base.
+\subsection{Estrazione di una base da un sistema di generatori per il caso $\mathbf{V=\mathbb{R^n}}$}
+La dimostrazione precedente permette di capire che dato un sistema di generatori per uno spazio vettoriale $V$, un sottoinsieme di tali generatori costiutisce una base. 
+Per trovare tale sottoinsieme quanto $V=\mathbb{R^n}$ o un suo sottoinsieme:
+\begin{enumerate}
+\item Sia $\{\underline{v_1},\cdots,\underline{v_m}\}$ un sistema di generatori per $\mathbb{R^n}$.
+\item Costruita la matrice $A$ con sulle colonne le ennuple $\underline{v_1},\cdots,\underline{v_m}$, questa ha rango $n$.
+\item Ridotta $A$ nella forma a scalini l'insieme di $n$ vettori linearmente indipendenti corrispondono alle ennuple delle colonne in cui \`e presente un pivot.
+\end{enumerate}
+\section{Complemento a una base}
+Sia $V\neq \{\underline{0}\}$ uno spazio vettoriale finitamente generato con una base $\beta=\{\underline{b_1},\underline{b_2},\cdots, \underline{b_n}\}$. Dato un insieme di 
+vettori indipendenti$\{\underline{v_1},\cdots,\underline{v_p}\}$, con $p\le n$ allora esiste una base formata da $\{\underline{v_1},\cdots,\underline{v_p}\}$ e da altri $n-p
+$ vettori di $\beta$. In particolare se $V$ ha una base formata da $n$ vettori, allora $n$ vettori linearmente indipendenti formano una base di $V$.
+\subsection{Corollario 1}
+Se $V$ ha una base formata da $n$ vettori ogni insieme di $m$ vettori con $m>n$ \`e linearmente dipendente.
+\subsubsection{Dimostrazione}
+Si prendano $n$ vettori nell'insieme: se tali vettori sono dipendenti allora anche l'insieme di partenza lo \`e. Se non lo \`e formano una base e i rimanenti $m-n$ vettori
+sono esprimibili come combinazione lineare di tale base, pertanto l'insieme di partenza \`e dipendente.
+\subsection{Corollario 2}
+Via $V$ uno spazio vettoriale finitamente generato e $A=\{\underline{a_1},\cdots,\underline{a_n}\}$ e $\beta=\{\underline{b_1},\cdots,\underline{b_m}\}$ due basi di $V$. Allora 
+$m=n$
+\subsubsection{Dimostrazione}
+Dal corollario precedente se $n>m$ $A$ sarebbe linearmente dipendente. Se invece $m>n$ $\beta$ sarebbe dipendente.
+\section{Dimensione di uno spazio vettoriale}
+Sia $V\neq \{\underline{0}\}$ uno spazio vettoriale vettoriale finitamente generato. Si dice dimensione di $V$ ($dim(V)$) il numero di vettori che compongono una sua qualsiasi 
+base, se $V=\{\underline{0}\}$, $dim(V)=0$. Analogamente per i sottospazi vettoriali.
+\subsubsection{Osservazione}
+Se il sottospazio $U$ \`e dato come insieme di soluzioni di un sistema omogeneo allora la sua dimensione \`e il numero di variabili libere.
+\section{Completare a una base un sistema lineare in $\mathbb{R^n}$}
+Sia $\{\underline{v_1},\cdots,\underline{v_p}\}$ un sistema linearmente indipendente in $\mathbb{R^n}$ e $\beta$ una base fissata. Per stabilire quali vettori della base canonica
+vadano aggiunti ai $p$ vettori considerati per ottenere una base considero la matrice $(A|B)$ le cui prime $p$ colonne contengono le ennuple $\underline{v_1},\cdots,
+\underline{v_p}$ e le ultime $n$ colonne gli elementi della base $\beta$. La matrice $(A|B)$ ridotta a scalini avr\`a  $p$ pivot sulle prime $p$ colonne e la posizione dei 
+restanti $n-p$ pivot indicher\`a le colonne corrispondenti agli elementi della base che vanno aggiunti a $\underline{v_1},\cdots,\underline{v_p}$ per ottenere una base.
+\section{Coordinate}
+Sia $V\neq \{\underline{0}\}$ uno spazio generale finitamente generato e $\beta=\{\underline{b_1},\cdots,\underline{b_n}\}$ una sua base fissata. Abbiamo visto come un qualsiasi 
+vettore $\underline{v}\in V$ si possa scrivere come combinazione lineare degli elementi della base:
+\begin{equation}
+\underline{v}=\sum\limits_{i=1}^n v_i\underline{b_i} 
+\end{equation}
+I numeri reali $v_1,\cdots, v_n$ sono detti coordinate di $\underline{v}$ rispetto alla base $\beta$. Si pu\`o definire una funzione $T_\beta:V\rightarrow\mathbb{R^n}$ che ad 
+ogni vettore fa corrispondere le sue coordinate rispetto a $\beta$. 
+\subsection{Linearit\`a e biunivocit\`a della funzione delle $\mathbb{T_\beta}$}
+La funzione $T_\beta$ \`e biunivoca e lineare, ovvero $\forall\underline{v},\underline{w}\in V$ e $\forall\lambda,\mu\in\mathbb{R}$ si ha: $T_\beta(\lambda\underline{v}+\mu
+\underline{w})=\lambda T_\beta(\underline{v})+\mu T_\beta(\underline{w})$. 
+\subsubsection{Dimostrazione}
+La funzione che associa ad una ennupla $(v_1,\cdots,v_n)$ il vettore $\underline{v}=\sum\limits_{i=1}^n v_i\underline{b_i}$ \`e chiaramente l'inversa di $T_\beta$, che in quanto
+invertibile risulta biunivoca.\\
+La linearit\`a segue dal fatto che $\lambda\underline{v}+\mu\underline{w}=$\\
+$=\lambda\sum\limits_{i=1}^nv_i\underline{b_i}+\mu\sum\limits_{i=1}^nw_i\underline{b_i}=\sum\limits_{i=i}^n(\lambda v_i+\mu w_i)\underline{b_i}$. Perci\`o:\\
+$T_\beta(\lambda \underline{v}+\mu\underline{w})=(\lambda v_1+\mu w_1,\cdots,\lambda v_n+\mu w_n)=\lambda(v_1,\cdots,v_n)+\mu(w_1,\cdots,w_n)=\lambda T_\beta(\underline{v})+\mu 
+T_\beta(\underline{w})$.
+\subsection{La funzione $T_\beta$ e la consevazione delle propriet\`a degli insiemi di vettori}
+Sia $\{\underline{v_1},\cdots,\underline{v_p}\}$ un insieme di vettori di $V$, allora tale insieme \`e linearmente indipendente (rispettivamente sistema di generatori, 
+rispettivamente base) se e solo se l'insieme di vettori $\{T_\beta(\underline{v_1}),\cdots,T_\beta(\underline{v_p})\}$ \`e linearmente indipendente (rispettivamente sistema di 
+generatori, rispettivamente base)
+\subsubsection{Dimostrazione}
+La dimostrazione seguir\`a da risultati pi\`u generali sulle funzioni lineari presentati nel capitolo successivo.
+\subsection{Determinare la base di un qualsiasi spazio vettoriale}
+Le coordinate permettono di riportare a $\mathbb{R^n}$ problemi relativi a qualsiasi spazio vettoriale. Per determinare se $n$ vettori di $\mathbb{R^n}$ formano una base, basta
+calcolare il determinante della matrice associata. Utilizzando le coordinate si pu\`o procedere in maniera analoga con qualsiasi spazio vettoriale: sia $V$ lo spazio vettoriale 
+di dimensione $n$ e $\beta=\{\underline{b_1},\cdots,\underline{b_n}\}$ una sua base. Dato un insieme $\{\underline{v_1},\cdots,\underline{v_n}\}$ di $n$ vettori appartenenti a $V
+$, per stabilire se \`e linearmente indipendente, e pertanto una base \`e sufficiente considerare la matrice quadrata $n\times n$ le cui colonne sono le coordinate di $
+\underline{v_1},\cdots,\underline{v_n}$ sulla base $\beta$. Se il determinante non \`e nullo allora tale insieme di vettori \`e una base.
+\section{Spazio delle righe e delle colonne di una matrice}
+$A\in M_{m\times n}(\mathbb{R})$, $R(A)\subset\mathbb{R^n}$, lo spazio delle righe di $A$ \`e lo spazio di $\mathbb{R^n}$ generato dalle $m$ righe $r$ di $A$: $R(A)=<r_1,
+\cdots,r_m>$.
+\subsection{Dimensione dello spazio delle righe di una matrice in forma a scalini}
+Sia $A\in M_{m\times n}(\mathbb{R})$ una matrice in forma a scalini. La dimensione del spazio delle righe di tale matrice \`e uguale al numero di pivot.
+\subsubsection{Dimostrazione} 
+Siano $\underline{r_1},\underline{r_2},\cdots,\underline{r_p}$ le righe non nulle della matrice. Per ogni $i=1,\cdots,p-1$ il vettore $\underline{r_i}$ non \`e contenuto in 
+$<\underline{r_{i+1}},\cdots,\underline{r_p}>$ in quanto la sua prima componente non nulla (il pivot) non pu\`o essere espressa come combinazione lineare degli zeri che i vettori 
+$\underline{r_{i+1}},\cdots,\underline{r_p}$ hanno nella posizione corrispondente. Quindi i vettori $\underline{r_1},\underline{r_2},\cdots,\underline{r_p}$ sono indipendenti e 
+la dimensione di $R(A)=p$.
+\subsection{Dimensione dello spazio delle righe di una matrice}
+Sia $A\in M_{m\times n}(\mathbb{R})$ una matrice e $A'$ una sua forma a scalini, allora lo spazio delle righe di $A$ \`e uguale a quello di $A'$, in particolare la dimensione di 
+$A$ \`e uguale al numero di pivot di $A'$.
+\subsubsection{Dimostrazione}
+Le righe di $A'$ essendo ottenute attraverso una serie di operazioni elementari, sono combinazioni lineari delle righe di $A$, perci\`o $R(A')\subseteq<r_1,\cdots,r_m> =R(A)$. 
+Analogamente, essendo le operazioni elementari tutte reversibili, le righe di $A$ sono combinazioni lineari delle righe di $A'$, ovvero $R(A)\subseteq R(A')$. Considerando le due 
+inclusioni $R(A')=R(A)$, ovvero $dim(R(A))=dim(R(A'))=$ numero di pivot di $A'$.
+\subsection{Corollario}
+Sia $A\in M_{m\times n}(\mathbb{R})$ una matrice, il numero di pivot di ogni forma a scalini di $A$ \`e lo stesso.
+\subsubsection{Dimostrazione}
+Il numero di pivot di una qualsiasi forma a scalini di $A$ \`e la dimensione di $R(A)$ e pertanto non dipende dalla forma a scalini scelta.
+
+
+
+
+
+\section{Interpolazione polinomiale}
+Siano fissati $n$ punti nel piano $P_1=(x_1,y_1),\cdots,P_n=(x_n,y_n)$ con ascisse distinte, si vuole trovare un polinomio il cui grafico passi per tutti i punti dati. Il 
+passaggio per un punto si traduce in un'equazione lineare sui coefficienti del polinomio pertanto affinch\`e il problema abbia soluzione comunque siano presi i punti, il numero 
+di coefficienti deve essere uguale o maggiore a $n$, ovvero il polinomio avr\`a grado $\ge n-1$. Tale polinomio \`e unico, in quanto scritta la generica condizione di passaggio 
+per i punti si traduce nel sistema lineare:
+$
+\left[\begin{matrix}
+1 & x_1 & \cdots &x_1^{n-1}\\
+1 & x_2 & \cdots &x_2^{n-1} \\
+\cdots & \cdots & \cdots & \cdots \\
+1 & x_n & \cdots & x_n^{n-1}
+\end{matrix}\right]
+\left[\begin{matrix}
+a_0\\
+a_1\\
+\cdots\\
+a_{n-1}\\
+\end{matrix}\right]
+=
+\left[\begin{matrix}
+y_1\\
+y_2\\
+\cdots\\
+y_n\\
+\end{matrix}\right]
+$\\
+La matrice dei coefficienti, o matrice di Vandermonde, ha determinante\\
+$\prod\limits_{1\le i\le j\le n}(x_j-x_i)$ (ovvero il prodotto tra le differenze di tutte le ascisse con 
+segno opportuno).\\
+\subsection{Basi di Lagrange}
+Per trovare la soluzione a questo problema \`e conveniente considerare una base diversa da quella canonica, chiamata base di Lagrange, costituita dai polinomi $p_1,\cdots,p_n$ d
+definiti come:
+\begin{equation}
+p_i(x):=\prod\limits_{j\neq i}(\dfrac{x-x_j}{x_i-x_j})
+\end{equation}
+Dalla definizione segue che $p_i(x_j)=\delta_{ij}$, ovvero si annulla in $x_j$ e vale uno in $x_i$. Da questa propriet\`a segue che i polinomi sono linearmente indipendenti: se
+$\lambda_1p_1(x)+\cdots+\lambda_np_n(x)=0$, valutando in $x_i$, si ottiene $\lambda_1p_1(x_i)+\cdots+\lambda_np_n(x_i)=\lambda_i=0$. Poich\`e lo spazio vettoriale 
+$\mathbb{R}_{n-1}[x]$ ha dimensione $n$ l'insieme $p_1,\cdots,p_n$ ne costituisce una base. Il polinomio richiesto pu\`o essere scritto utilizzando la base di Lagrange come:
+\begin{equation}
+p(x)=\sum\limits_{i=1}^ny_ip_i(x)
+\end{equation}

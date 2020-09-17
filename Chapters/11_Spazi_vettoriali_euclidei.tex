@@ -1,0 +1,180 @@
+\chapter{Spazi vettoriali euclidei}
+\section{Prodotto scalare}
+Sia $V$ uno spazio vettoriale. Il prodotto scalare su $V$ \`e un operazione che associa a due vettori di $V$, $\underline{v}$ e $\underline{w}$ un numero reale ed \`e indicato con
+$\underline{v}\cdot\underline{w}$. Per il prodotto scalare valgono le seguenti propriet\`a:
+\begin{itemize}
+\item $\underline{v}\cdot\underline{w}=\underline{w}\cdot\underline{v}\;\;\forall\underline{v},\underline{w}\in V$.
+\item $(\lambda\underline{v})\cdot\underline{w}=\lambda(\underline{v}\cdot\underline{w})\;\;\forall\underline{v},\underline{w}\in V$ e $\forall\lambda\in\mathbb{R}$.
+\item $\underline{v}\cdot(\underline{w}+\underline{u})=\underline{v}\cdot\underline{w}+\underline{v}\cdot\underline{u}\;\;\forall\underline{v},\underline{w}, \underline{u}\in V$.
+\item $\underline{v}\cdot\underline{v}\ge0\;\;\forall\underline{v}\in V$ e $\underline{v}\cdot\underline{v}=0\Leftrightarrow\underline{v}=0$.
+\end{itemize}
+Uno spazio vettoriale dotato di prodotto scalare \`e detto spazio vettoriale euclideo.
+\subsection{Esempi di spazi vettoriali euclidei}
+\subsubsection{$\mathbf{V=\mathbb{R^n}}$}
+\`E il cosiddetto prodotto scalare canonico, se $\underline{v}=(v_1,\cdots,v_n)$ e $\underline{w}=(w_1,\cdots,w_n)$ sono vettori, allora
+\begin{equation}
+\underline{v}\underline{w}=\sum\limits_{i=1}^nv_iw_i
+\end{equation}
+\subsubsection{$\mathbf{V=\mathbb{R}_2[x]}$}
+Se $p(x), q(x)\in\mathbb{R}_2[x]$ allora:
+\begin{equation}
+p(x)q(x)=p(0)q(0)+p(1)q(1)+p(-1)q(-1)
+\end{equation}
+\subsubsection{$\mathbf{V=M_2(\mathbb{R})}$}
+Se $A,B\in M_2(\mathbb{R})$, allora 
+\begin{equation}
+AB=Tr(B^TA)
+\end{equation}
+Dove $Tr()$ indica la traccia della matrice, ovvero la somma degli elementi sulla diagonale principale. 
+\section{Disuguaglianza di Cauchy-Schwartz}
+Sia $V$ uno spazio vettoriale euclideo e $\underline{v},\underline{w}\in V$, allora:
+\begin{equation}
+(\underline{u}\underline{v})^2\le (\underline{u}\underline{u})(\underline{v}\underline{v})
+\end{equation}
+\subsubsection{Dimostrazione}
+Si suppongano $\underline{v},\underline{u}\neq 0$, altrimenti sarebbe banalmente verificato. Per la propriet\`a del prodotto scalare si ha che $\forall\lambda,\mu\in
+\mathbb{R}$ $(\lambda\underline{u}+\mu\underline{v})(\lambda\underline{u}+\mu\underline{v})\ge 0$. Sempre usando le propriet\`a del prodotto scalare: 
+$0\le (\lambda\underline{u}+\mu\underline{v})(\lambda\underline{u}+\mu\underline{v})=\lambda^2(\underline{u}\underline{u})+2\lambda\mu(\underline{u}\underline{v})+
+\mu^2(\underline{v}\underline{v})$. Considerando $\lambda=\underline{v}\underline{v}$ e $\mu=-\underline{u}\underline{v}$ si ottiene:
+$0\le (\underline{v}\underline{v})^2-2(\underline{v}\underline{v})(\underline{u}\underline{v})^2+(\underline{u}\underline{v})^2(\underline{v}\underline{v})$.\\
+$0\le(\underline{v}\underline{v})[(\underline{u}\underline{u})(\underline{v}\underline{v})-(\underline{u}\underline{v})^2]$. Essendo $\underline{v}\underline{v}\ge 0$ \`e 
+dimostrata la disuguaglianza.
+\section{La norma}
+Sia $V$ uno spazio vettoriale euclideo, la norma di un vettore \`e il numero reale non negativo definito come:
+\begin{equation}
+||\underline{v}||=\sqrt{\underline{v}\underline{v}}
+\end{equation}
+Dato un vettore $\underline{v}\neq \underline{0}$ la sua normalizzazione \`e il vettore $\frac{\underline{v}}{||\underline{v}||}$. La normalizzazione di un vettore 
+\`e un vettore di norma $1$.
+\subsection{Osservazione}
+Nel caso di $\mathbb{R^n}$ si pu\`o dimostrare che dati $\underline{v},\underline{w}\in\mathbb{R^n}$ se $\theta$ \`e l'angolo compreso tra essi:
+\begin{equation}
+\cos\theta=\dfrac{\underline{v}\underline{w}}{||\underline{v}||||\underline{w}||}
+\end{equation}
+\subsection{Propriet\`a della norma}
+Sia $V$ uno spazio vettoriale euclideo. La norma \`e una funzione da $V$ a $\mathbb{R}$ che gode delle seguenti propriet\`a: $\forall\underline{v},\underline{w}\in V$ e $\forall
+\lambda\in\mathbb{R}$
+\begin{itemize}
+\item $||\underline{v}||\ge 0$ e $||\underline{v}||=0\Leftrightarrow\underline{v}=0$.
+\item $||\lambda\underline{v}||=|\lambda|||\underline{v}||$.
+\item $||\underline{v}+\underline{w}||\le ||\underline{v}||+||\underline{w}||$.
+\end{itemize}
+\subsubsection{Dimostrazione}
+La dimostrazione delle prime due \`e immediata, la terza segue dalla disuguaglianza di Caucht-Schwartz: $||\underline{v}+\underline{w}||^2=\underline{v}\underline{v}
++2\underline{v}\underline{w}+\underline{w}\underline{w}\le \underline{v}\underline{v}+2\sqrt{(\underline{v}\underline{v})(\underline{w}\underline{w})}+\underline{w}\underline{w}
+\le (||\underline{v}||+||\underline{w}||)^2$.
+\section{Distanza tra due vettori}
+Sia $V$ uno spazio vettoriale euclideo, la distanza tra due vettori $\underline{v},\underline{w}\in V$ \`e definita come la norma della loro differenza:
+\begin{equation}
+d(\underline{v},\underline{w})=||\underline{v}-\underline{w}||
+\end{equation}
+\subsection{Propriet\`a della distanza}
+$\forall \underline{v},\underline{w},\underline{u}\in V$
+\begin{itemize}
+\item $d(\underline{v},\underline{w})\ge 0$ e $d(\underline{v},\underline{w})=0\Leftrightarrow \underline{v}=\underline{w}$.
+\item $d(\underline{v},\underline{w})=d(\underline{w},\underline{v})$.
+\item $d(\underline{u},\underline{w})\le d(\underline{u},\underline{v})+d(\underline{v},\underline{w})$.
+\end{itemize}
+\subsubsection{Dimostrazione}
+Le prime due propriet\`a sono conseguenze immediate della definizione, la terza dipende dalla propriet\`a della norma: $d(\underline{u},\underline{w})=||\underline{u}-
+\underline{w}||=||\underline{u}-\underline{v}+\underline{v}-\underline{w}||\le||\underline{u}-\underline{v}||+||\underline{v}-\underline{w}||=d(\underline{u},\underline{v})+
+d(\underline{v},\underline{w})$.
+\section{Ortogonalit\`a}
+Sia $V$ uno spazio vettoriale euclideo, due vettori $\underline{v}$, $\underline{w}$ si dicono ortogonali se il loro prodotto scalare \`e nullo.
+\subsection{Ortogonalit\`a e indipendenza lineare}
+Sia $V$ uno spazio vettoriale euclideo e $\underline{v_1},\cdots,\underline{v_p}$ vettori non nulli e ortogonali a coppie (ovvero $\underline{v_i}\underline{v_j}=0\;\;\forall i
+\neq j$, allora $\{\underline{v_1},\cdots,\underline{v_p}\}$ \`e un sistema indipendente.
+\subsubsection{Dimostrazione}
+Si eguagli la combinazione lineare al vettore nullo: $\lambda_1\underline{v_1}+\cdots+\lambda_p\underline{v_p}=\underline{0}$. Moltiplicando scalarmente per $\underline{v_i}$ 
+tutti gli elementi della somma si annullano tranne $\lambda_i\underline{v_i}\underline{v_i}$, essendo $\underline{v_i}\neq\underline{0}$, pertanto segue che $\lambda_i=0$.
+\subsection{Corollario}
+Sia $V$ uno spazio vettoriale euclideo di dimensione $n$, siano $\underline{v_1},\cdots,\underline{v_n}$ vettori non nulli e ortogonali a coppie, allora $\{\underline{v_1},
+\cdots,\underline{v_n}\}$ \`e una base di $V$.
+\subsection{Proiezioni}
+In uno spazio vettoriale euclideo, dato $\underline{u}\neq\underline{0}$ \`e possibile scrivere ogni altro vettore come somma di un vettore parallelo a $\underline{u}$ e di uno 
+ortogonale a $\underline{u}$. Dato $\underline{v}$ lo si vuole scrivere come:
+\begin{equation}
+\underline{v}=\lambda\underline{u}+(\underline{v}-\lambda\underline{u})
+\end{equation}
+Scegliendo $\lambda$ in modo che $\underline{u}(\underline{v}-\lambda\underline{u})=0$. \`E immediato verificare che \`e necessario scegliere $\lambda=\frac{\underline{v}
+\underline{u}}{||\underline{u}||^2}$.
+\subsubsection{Funzione proiezione ortogonale}
+In uno spazio vettoriale euclideo $V$, fissato un vettore $\underline{u}\neq \underline{0}$, la proiezione ortogonale lungo $\underline{u}$ \`e la funzione $pr_{\underline{u}}:V
+\rightarrow V$ definita ponendo $pr_{\underline{u}}=\frac{\underline{v}\underline{u}}{||\underline{u}||^2}\underline{u}$.
+\subsection{Basi ortonormali}
+Si definisca la funzione $\delta$ di Kronecker sulle coppie di interi $i,j$ in modo che:
+\begin{equation}
+\delta_{ij}=\begin{cases}
+0\;\;\;\;i\neq j\\
+1\;\;\;\;i=j
+\end{cases}
+\end{equation}
+\subsubsection{Ortonormalit\`a}
+Sia $V$ uno spazio vettoriale euclideo, un insieme di vettori $\{\underline{v_1},\cdots,\underline{v_p}\}$ \`e detto ortonormale se $\underline{v_i}\underline{v_j}=\delta_{ij}$. 
+Un insieme di vettori \`e perci\`o ortonormale se tutti i vettori hanno norma uguale a $1$ e sono ortogonali a coppie. In particolare se $\{\underline{v_1},\cdots,\underline{v_p}
+\}$ \`e una base sar\`a detta base ortonormale.
+\subsubsection{Metodo di Gram-Schmidt}
+Sia $V$ uno spazio vettoriale euclideo e $\{\underline{v_1},\cdots,\underline{v_p}\}$ un sistema di vettori linearmente indipendente. Allora esiste un insieme ortonormale di 
+vettori $\{\underline{a_1},\cdots,\underline{a_p}\}$ tale che $<\underline{a_1},\cdots,\underline{a_p}>=<\underline{v_1},\cdots,\underline{v_p}>$.\\
+\textbf{Dimostrazione:}\\
+Si costruisca un insieme di vettori $\{\underline{a'_1},\cdots,\underline{a'_p}\}$ che siano ortogonali a coppie e tali che $<\underline{a'_1},\cdots,\underline{a'_p}>=<
+\underline{v_1},\cdots,\underline{v_p}>$. L'insieme desiderato sar\`a determinato normalizzando $\{\underline{a'_1},\cdots,\underline{a'_p}\}$. Si ponga $\underline{a'_1}=
+\underline{v_1}$,\\ $\underline{a'_2}=\underline{v_2}-pr_{\underline{a'_1}}(\underline{v_2})=\underline{v_2}-\frac{\underline{v_2}\underline{a'_1}}{||\underline{a'_1}||^2}
+\underline{a'_1}$ e $\underline{a'_s}=\underline{v_s}-\sum\limits_{i=i}^{s-1}pr_{\underline{a'_i}}(\underline{v_s})=\underline{v_s}-\sum\limits_{i=i}^{s-1}\frac{\underline{v_s}
+\underline{a'_i}}{||\underline{a'_i}||^2}\underline{a'_i}$. Poich\`e i vettori $\underline{a'_1},\cdots,\underline{a'_p}$ sono costruiti ortogonali a coppie, il sistema 
+$\{\underline{a'_1},\cdots,\underline{a'_p}\}$ \`e linearmente indipendente. Inoltre per costruzione $\underline{a'_i}\in <\underline{v_1},\cdots,\underline{v_p}>$, perci\`o 
+$<\underline{a'_1},\cdots,\underline{a'_p}>\subseteq<\underline{v_1},\cdots,\underline{v_p}>$. Poich\`e $dim(<\underline{v_1},\cdots,\underline{v_p}>)=dim(<\underline{a'_1},
+\cdots,\underline{a'_p}>)=p$, l'inclusione \`e in realt\`a un'uguaglianza.
+\subsubsection{Coordinate di un vettore rispetto ad una base ortonormale}
+Sia $V$ uno spazio vettoriale euclideo e sia $A=\{\underline{a_1},\cdots,\underline{a_n}\}$ una sua base ortonormale, allora la coordinata i-esima di un vettore $\underline{v}$ 
+su tale base \`e data da $\underline{v}\underline{a_i}$.\\
+\textbf{Dimostrazione:}\\
+Si scriva $\underline{v}=\sum\limits_{j=1}^nv_j\underline{a_j}$, effettuando il prodotto scalare con $\underline{a_i}$ si trova: $\underline{v}\underline{a_i}=
+\sum\limits_{i=1}^nv_j(\underline{a_j}\underline{a_i})=v_i$.
+\subsection{Complemento ortogonale}
+Sia $V$ uno spazio vettoriale euclideo, dato $S\subset V$, l'insieme dei vettori ortogonali a tutti gli elementi di $S$ \`e un sottospazio di $V$, chiamato complemento ortogonale 
+di $S$ e indicato con $S^\bot$.
+\subsubsection{Dimensione del complemento ortogonale}
+Sia $V$ uno spazio vettoriale euclideo e $S$ un suo sottoinsieme, allora
+\begin{equation}
+dim(S)+dim(S^\bot)=dim(V)
+\end{equation} 
+\textbf{Dimostrazione:}\\
+Sia $\{\underline{u_1},\cdots,\underline{u_p}\}$ una base ortonormale di $S$ e sia $f:V\rightarrow\mathbb{R^p}$ la funzione definita ponendo: $f(\underline{v})=(\underline{v}
+\underline{u_1},\cdots,\underline{v}\underline{u_p})$. Tale funzione \`e lineare (propriet\`a del prodotto scalare) e suriettiva ($f(\underline{u_1}),\cdots,f(\underline{u_p})$ 
+base canonica di $\mathbb{R^p}$). Inoltre $Ker(f)=S^\bot$. La tesi segue applicando ad $f$ il teorema della nullit\`a pi\`u rango.
+\section{Isomerie e matrici ortogonali}
+Sia $V$ uno spazio vettoriale euclideo, una funzione $f:V\rightarrow V$ \`e detta isomeria se $\forall\underline{v},\underline{u}\in V$ si ha che:
+\begin{equation}
+f(\underline{v})f(\underline{u})=\underline{v}\underline{u}
+\end{equation}
+\subsubsection{Conservazione della norma}
+Poich\`e un'isomeria conserva il prodotto scalare allora conserva anche la norma: $||f(\underline{u})||=||\underline{u}||$ $\forall\underline{u}\in V$: infatti $||
+f(\underline{u})||=\sqrt{f(\underline{u})f(\underline{u})}=\sqrt{\underline{u}\underline{u}}=||\underline{u}||$.
+\subsubsection{Conservazione della distanza}
+Un'isomeria conserva la distanza, infatti: $d(f(\underline{v}),f(\underline{u}))=d(\underline{v},\underline{u})$ $\forall\underline{v},\underline{u}\in V$: infatti 
+$d(f(\underline{v}),f(\underline{u}))=||f(\underline{v}-f(\underline{u})||=||f(\underline{v}-\underline{u})||=\sqrt{f(\underline{v}-\underline{u})f(\underline{v}-\underline{u})}
+=\sqrt{(\underline{v}-\underline{u})(\underline{v}-\underline{u})}=||\underline{v}-\underline{u}||=d(\underline{v},\underline{u})$.
+\subsection{Matrici ortogonale}
+Una matrice quadrata $A\in M_n(\mathbb{R})$ \`e detta ortogonale se \`e invertibile e ha come inversa la sua trasposta. L'insieme delle matrici ortogonali di ordine $n$ si denota
+con $O_n(\mathbb{R})$. Si pu\`o dimostrare che $O_n(\mathbb{R})$ \`e un gruppo rispetto al prodotto di matrici:
+\begin{equation}
+O_n(\mathbb{R})=\{A\in M_n(\mathbb{R})|AA^T=I_n=A^TA\}
+\end{equation}
+\subsection{Condizione affinch\`e una funzione sia un'isomeria}
+Sia $V$ uno spazio vettoriale euclideo, $f:V\rightarrow V$ una funzione lineare e $A=\{\underline{a_1},\cdots,\underline{a_n}\}$ una base ortonormale di $V$. Allora $f$ \`e 
+un'isomeria se e solo se la matrice rappresentativa $B=M_A(f)$ \`e una matrice ortogonale.
+\subsubsection{Dimostrazione}
+Sia $B=[\alpha_{ij}]$. Per definizione di matrice rappresentativa si ha $f(\underline{a_i})=\sum\limits_{k=1}^n\alpha_{ki}\underline{a_k}$ e $f(\underline{a_j})=\sum\limits_{h=1}
+^n\alpha_{hj}\underline{a_h}$. Perci\`o $\delta_{ij}=\underline{a_i}\underline{a_j}=f(\underline{a_i})f(\underline{a_j})=\sum\limits_{k=1}^n\sum\limits_{h=1}^n\alpha_{ki}
+\alpha_{hj}\underline{a_h}\underline{a_k}=\sum\limits_{k=1}^n\alpha_{ki}\alpha_{kj}$, Utilizzando la definizione del prodotto righe per colonne si vede che l'elemento di posto
+$(i,j)$ nel prodotto di $A$ con $A^T$ \`e esattamente $\sum\limits_{k=1}^n\alpha_{ki}\alpha_{kj}$, pertanto la tesi \`e dimostrata.
+\subsection{Osservazioni}
+\begin{itemize}
+\item Una matrice ortogonale ha determinante uguale a $\pm 1$, infatti per il teorema di Binet, si ha $det(AA^T)=det(A)det(A^T)=det(I)=1$, dal fatto che $det(A)=det(A^T)$ segue 
+la tesi.
+\item Una matrice $A\in M_n(\mathbb{R})$ \`e ortogonale se e solo se le sue colonne formano una base ortonormale di $\mathbb{R^n}$ con il prodotto scalare canonico: infatti 
+considerando $\underline{a_1},\cdots,\underline{a_n}$ le colonne di $A$, essendo questa invertibile $C=\{\underline{a_1},\cdots,\underline{a_n}\}$ \`e una base di $\mathbb{R^n}$. 
+L'elemento di posto $(i,j)$ della matrice prodotto $AA^T$ \`e il prodotto scalare tra $\underline{a_i}$ e $\underline{a_j}$, quindi la matrice \`e identica se e solo se la base 
+$C$ \`e ortonormale.
+\end{itemize}

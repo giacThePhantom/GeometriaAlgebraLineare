@@ -1,0 +1,54 @@
+\chapter{Matrici}
+Una matrice di ordine mxn \`e una tabella con m righe e n colonne, nel nostro caso contenente numeri reali e si nota come: $M_{mxn} (\mathbf{R})$ e i suoi elementi
+$A=[a_{ij}]$, con i indice riga e j indice colonna.
+\subsubsection{Matrice quadrata}
+Una matrice si dice quadrata se il numero di colonne \`e uguale a quello delle righe.
+\subsubsection{Matrice identica}
+ Una matrice quadrata di ordine m si dice identica se i suoi elementi: 
+$I_m=[\delta_{[ij]}]$ se $\delta_i=1$ se i=j, $\delta_i=0$, se $i\neq j$.
+\subsubsection{Trasposta della matrice}
+Si chiama trasposta della matrice $A\in M_{mxn}(\mathbb{R})$ la matrice $A^t$ in cui le colonne sono le righe di A e le righe sono le colonne di A.
+\subsubsection{Matrice simmetrica}
+Se la matrice \`e quadrata e uguale alla sua trasposta allora si dice simmetrica. 
+\section{Operazioni tra matrici}
+\subsection{Somma tra matrici}
+La somma di matrici dello stesso ordine si ottiene sommando i termini delle due matrici nella stessa posizione. \`E commutativa e associativa, la matrice nulla \`e 
+l'elemento neutro e la matrice opposta \`e la matrice i cui elementi sono opposti all'altra matrice. 
+\subsection{Prodotto di una matrice per uno scalare}
+Gli elementi della matrice vengono tutti moltiplicati per il numero.
+\subsection{Prodotto tra matrici}
+$A\in M_{mxn} (\mathbb{R}), B\in M_{nxp} (\mathbb{R})$, \`e possibile definire il prodotto solo se il numero di colonne di A \`e uguale al numero di righe di B e A si dice 
+conformabile a sinistra a B o B conformabile a destra a A. $AB\in M_{mxp} (\mathbb{R})$, l'elemento di indice ij di AB si ottiene moltiplicando termine a termine la riga i 
+di A e la colonna j di B e sommando i vari prodotti: $c_{ik}=\sum\limits_{j=1}^n a_{ij}b_{jk}$. Tra le matrici quadrate il prodotto \`e sempre definito e genera una matrice 
+dello stesso ordine. Non vale la propriet\`a commutativa, l'elemento neutro \`e la matrice identica. 
+\subsection{Altra forma di operazioni sulle righe delle matrici}
+Data una matrice $A\in M_{mxn} (\mathbb{R})$ ogni operazione elementare sulle righe pu\`o essere realizzata moltiplicando a sinistra per la matrice che si ottiene dalla 
+matrice identica effettuando la stessa operazione elementare.
+\section{La matrice inversa}
+Data $A\in M_{m} (\mathbb{R}),\exists B\in M_{m} (\mathbb{R}): AB=BA=I_m$. Se B esiste allora si dice matrice inversa di A, $B=A^{-1}$. A \`e detta matrice invertibile e vale
+solo per matrici quadrate. La matrice nulla non \`e invertibile e, pi\`u in generale, una matrice non \`e invertibile se possiede una riga o una colonna di zeri. L'inversa 
+dell'identit\`a \`e l'identit\`a stessa: $I_m^{-1}=I_m$
+\subsection{Unicit\`a della matrice inversa}
+Supponiamo che $A\in M_{m} (\mathbb{R})$ sia invertibile e che possieda due matrici inverse $B,B'$:\\
+$AB=BA=I\wedge AB'=B'A=I$\\
+$B=BI=B(AB')$\\
+$B=(BA)B'=IB'=B'$\\
+$B=B'$, che \`e un assurdo.
+\subsection{Prodotto di matrici invertibili}
+Se A e B sono invertibili allora \`e invertibile anche AB e la sua inversa \`e $B^{-1}A^{-1}$\\
+$(AB)(B^{-1}A^{-1})=A(BB^{-1})A^{-1}=AIA^{-1}=AA^{-1}=I$
+\subsection{Trovare la matrice inversa}
+Dato $A\in M_{m} (\mathbb{R})$, rref(A) si ottiene moltiplicando a sinistra A per un'opportuna matrice invertibile quadrata di ordine m. Pertanto $\exists P$ invertibile$: 
+PA=rref(A)$. Per stabilire se A \`e invertibile devo ottenere $rref(A)$: se  $rk(rref(A))$ \`e massimo $rref(A)=I_m$, allora rref(A) \`e invertibile. $rk(rref(A))=n\Rightarrow
+\exists n$ pivot, unico elemento diverso da zero nella loro colonna, in ogni riga \`e presente un pivot. Una matrice \`e invertibile solo se ha rango n massimo.\\
+$\exists P\in M_n (\mathbb{R})$ invertibile: $PA=rref(A)$. Se A \`e invertibile allora PA \`e invertibile, ovvero rref(A) ha rango n e A ha rango n, ovvero rref(A)=I, 
+$P=A^{-1}$. Per trovare la matrice inversa scrivo la matrice $(A|I_n)$, riduco a scalini la parte di A, verifico sia invertibile e la riduco all'identit\`a, in questo modo
+avr\`o ottenuto la matrice $(I_n|A^{-1})$
+\section{Matrici e sistemi lineari}
+Un sistema lineare pu\`o essere scritto nella forma A\underline{x}=\underline{b}, dove A \`e la matrice rappresentante i coefficienti, \underline{x} quella rappresentante le
+incognite e \underline{b} quella rappresentante i termini noti.
+\begin{itemize}
+\item  Se \underline{b}=0 il sistema \`e chiuso rispetto alle operazioni di somma e prodotto per uno scalare;
+\item Se \underline{b}$\neq 0$ e $x_0$ \`e soluzione del sistema, tutte le soluzioni del sistema sono nella forma $x_0+v$, dove v \`e soluzione del sistema omogeneo associato.
+\item Se la matrice quadrata A \`e invertibile il sistema ha un'unica soluzione nella forma $\underline{x}=A^{-1}\underline{b}$
+\end{itemize}

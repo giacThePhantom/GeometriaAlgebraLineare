@@ -1,0 +1,237 @@
+\chapter{Funzioni lineari}
+Siano $V,V'$ spazi vettoriali reali finitamente generati. Una funzione $f:V\rightarrow V'$ si dice lineare se:
+\begin{itemize}
+\item $f(\underline{u}+\underline{v})=f(\underline{v})+f(\underline{w})$
+\item $f(\lambda\underline{v})=\lambda f(\underline{v})$
+\item Ovvero se: $f(\lambda\underline{u}+\mu\underline{v})=\lambda f(\underline{u})+\mu f(\underline{v})$  
+\end{itemize}
+$V$ \`e detto dominio e $V'$ codominio di $f$, se $f$ \`e lineare e biunivoca si dice isomorfismo di spazi vettoriali.
+\subsection{Composte di funzioni lineari}
+Dati tre spazi vettoriali $V$, $V'$ e $V''$ e due funzioni lineari $f:V\rightarrow V'$ e $g:V'\rightarrow V''$. La loro composizione $h=g\circ f$ \`e una funzione lineare. Inoltre
+se $f:V\rightarrow V'$ \`e biunivoca, allora anche l'inversa $f^{-1}:V'\rightarrow V$ \`e lineare.
+\subsubsection{Linearit\`a della funzione composta}
+Sia $h(\lambda\underline{v}+\mu\underline{w})=g(f(\lambda\underline{v}+\mu\underline{w}))=g(\lambda f(\underline{v})+\mu f(\underline{w}))=\lambda g(f(\underline{v}))+\mu 
+g(f(\underline{w}))=\lambda h(\underline{v})+\mu h(\underline{w})$.
+\section{Nucleo}
+Sia $f:V\rightarrow V'$ una funzione lineare, il nucleo di $f$, denotato con $Ker(f)$ \`e \`insieme dei vettori la cui immagine \`e il vettore nullo:
+\begin{equation}
+Ker(f)=\{\underline{v}\in V|f(\underline{v})=\underline{0}\}
+\end{equation}
+\subsubsection{Osservazione}
+Il nucleo di $f$ \`e un sottospazio di $V$, infatti: $f(\lambda\underline{v}+\mu\underline{w})=\lambda f(\underline{v})+\mu f(\underline{w})=\underline{0}+\underline{0}=
+\underline{0}$
+\subsection{Nucleo e propriet\`a di $\mathbf{f}$}
+Sia $f:V\rightarrow V'$ una funzione lineare, allora sono equivalenti le seguenti proposizioni:
+\begin{enumerate}
+\item $Ker(f)=\{\underline{0}\}$.
+\item $f$ \`e iniettiva.
+\item Le immagini di sistemi indipendenti sono sistemi indipendenti.
+\end{enumerate}
+\subsubsection{Dimostrazione}
+$\mathbf{1\Rightarrow 2}$: Siano $\underline{v_1}$ e $\underline{v_2}$ tali che $f(\underline{v_1})=f(\underline{v_2})$, per la linearit\`a di $f$ si ha che $f(\underline{v_1}-
+\underline{v_2})=\underline{0}_{V'}$, pertanto $v_1-v_2\in Ker(f)$, pertanto $\underline{v_1}=\underline{v_2}$.\\
+$\mathbf{2\Rightarrow 3}$: si consideri l'insieme indipendente $\{\underline{v_1},\cdots, \underline{v_p}\}$, si scriva la combinazione lineare delle immagini dei vettori e la si
+ponga uguale al vettore nullo: $\lambda_1 f(\underline{v_1})+\cdots+\lambda_p f(\underline{v_p})=\underline{0}_{v'}$. Per la linearit\`a di $f$ si ottiene 
+$f(\lambda_1\underline{v_1}+\cdots+\lambda_p\underline{v_p})=\underline{0}_{V'}$, da cui per l'iniettivit\`a di $f$ si ottiene: $\lambda_1\underline{v_1}+\cdots+\lambda_p
+\underline{v_p}=\underline{0}_V$. Essendo indipendenti, $\lambda_1=\cdots=\lambda_p=0$.\\
+$\mathbf{3\Rightarrow 1}$: Sia $\underline{v}\neq\underline{0}_V$, l'insieme $\{\underline{v}\}$ \`e linearmente indipendente, perci\`o anche $\{f(\underline{v})\}$ \`e 
+indipendente, quindi $f(\underline{v})\neq\underline{0}_{V'}$.
+\section{Immagine}
+L'immagine di $f$, denotata con $Im(f)$ \`e l'insieme dei vettori di $V'$ che sono immagini dei vettori di $V$ via $f$: $Im(f)=\{\underline{v'}\in V'|\exists\underline{v}\in 
+V:f(\underline{v})=\underline{v'}\}$.
+\subsubsection{Osservazioni}
+\begin{itemize}
+\item L'immagine di $f$ \`e un sottospazio di $V'$, infatti se $\underline{v'}$ e $\underline{w'}$ appartengono all'immagine, esistono $\underline{v}$ e $\underline{w}$ tali che 
+$f(\underline{v})=\underline{v'}$ e $f(\underline{w})=\underline{w'}$, pertanto $\lambda\underline{v'}+\mu\underline{w'}=\lambda f(\underline{v})+\mu f(\underline{w})=f(\lambda
+\underline{v}+\mu\underline{w})$, pertanto anche $\lambda\underline{v'}+\mu\underline{w'}$ appartiene all'insieme immagine.
+\item Sia $\{\underline{v_1},\cdots,\underline{v_n}\}$ un insieme di generatori di $V$, allora $\{f(\underline{v_1}),\cdots,f(\underline{v_n})\}$ \`e un insieme di generatori per 
+$Im(f)$. Si consideri $\underline{w'}\in Im(f)$, ovvero $\exists\underline{w}:f(\underline{w})=\underline{w'}$. Si esprima $\underline{w}$ come combinazione lineare: $
+\underline{w}=\sum\limits_{i=1}^n\lambda_i\underline{v_i}$. Si applichi la funzione: $f(\underline{w})=f(\sum\limits_{i=1}^n\lambda_i\underline{v_i})$. per la linearit\`a di $f$:
+$\underline{w'}=\sum\limits_{i=1}^n\lambda_i f(\underline{v_i})$.
+\end{itemize}
+\subsection{Immagine e propriet\`a di $\mathbf{f}$}
+Sia $f:V\rightarrow V'$ una funzione lineare, allora sono equivalenti le seguenti proposizioni:
+\begin{enumerate}
+\item $f$ \`e suriettiva.
+\item $Im(f)=V'$
+\item L'immagine di un sistema di generatori per $V$ \`e un sistema di generatori per $V'$
+\end{enumerate}
+\subsubsection{Dimostrazione}
+$\mathbf{1\Rightarrow 2}$: \`e immiediata dalla definizione di $Im(f)$.\\
+$\mathbf{2\Rightarrow 3}$: si \`e gi\`a osservato che se $\{\underline{v_1},\cdots,\underline{v_n}\}$ \`e un sistema di generatori per $V$ allora $\{f(\underline{v_1}),
+\cdots,f(\underline{v_n})\}$ \`e un sistema di generatori per $Im(f)$, essendo $Im(f)=V'$, $\{f(\underline{v_1}),\cdots,f(\underline{v_n})\}$ \`e un sistema di genaratori per 
+$V'$.\\
+$\mathbf{3\Rightarrow 1}$: sia $\underline{v'}\in V'$ e sia $\{\underline{v_1},\cdots,\underline{v_n}\}$ un sistema di generatori per $V$ e, pertanto $Im(f)=V'$, 
+$\{f(\underline{v_1}),\cdots,f(\underline{v_n})\}$ \`e un sistema di generatori di $V'$, pertanto esistono $\lambda_1,\cdots,\lambda_n$ scalari tali che $\underline{v'}=\lambda_1 
+f(\underline{v_1})+\cdots+\lambda_n f(\underline{v_n})=f(\lambda_1\underline{v_1}+\lambda_n\underline{v_n})$, ovvero $\underline{v'}$ ammette una controimmagine. 
+\section{Funzioni lineari definite da matrici}
+Sia $V=\mathbb{R^n}$ e $V'=\mathbb{R^m}$ e $A\in M_{m,n}(\mathbb{R})$, si analizzi la funzione $T_A:\mathbb{R^n}\rightarrow\mathbb{R^m}$ definita come
+\begin{equation}
+T_A(x)=A\underline{x}
+\end{equation} 
+Dove $\underline{x}=(x_1,\cdots,x_n)$. 
+\subsubsection{Linearit\`a}
+Questa funzione \`e una funzione lineare: infatti $\forall\underline{x},\underline{y}\in\mathbb{R^n}$ e $\forall\lambda,\mu\in\mathbb{R}$ 
+si ha $T_A(\lambda\underline{x}+\mu\underline{y})=A(\lambda\underline{x}+\mu\underline{y})=\lambda A\underline{x}+\mu A\underline{y}=\lambda T_A(\underline{x})+\mu 
+T_A(\underline{y})$.
+\subsection{Composizione}
+Data un'altra matrice $B\in M_{p,m}(\mathbb{R})$ \`e immediato verificare che la composizione $T_B\circ T_A:\mathbb{R^n}\rightarrow\mathbb{R^p}$ delle funzioni lineari $T_B:
+\mathbb{R^m}\rightarrow\mathbb{R^p}$ e $T_A:\mathbb{R^n}\rightarrow\mathbb{R^m}$ \`e la funzione lineare associata alla matrice $BA$, infatti: $(T_B\circ T_A)(\underline{x})
+=T_B(T_A(\underline{x}))=T_B(A\underline{x})=B(A\underline{x})=(BA)\underline{x}=T_{BA}(\underline{x})$.
+\subsection{Invertibilit\`a}
+Dalla composizione segue che se $A$ \`e invertibile anche $T_A$ \`e invertibile: si consideri $T_A\circ T_{A^{-1}}=T_{AA^{-1}}=T_{I_m}=I_{\mathbb{R^m}}=T_{I_m}=T_{A^{-1}A}=
+T_{A^{-1}}\circ T_A$.
+\subsection{Nucleo e immagine}
+\subsubsection{Nucleo}
+Il nucleo della funzione lineare $T_A$ \`e lo spazio delle soluzioni del sistema lineare associato $A\underline{x}=\underline{0}$, ovvero il nucleo della matrice $A$.
+\begin{equation}
+Ker(T_A)=N(A)
+\end{equation}
+\subsubsection{Immagine}
+L'immagine della funzione lineare $T_A$, avendo come sistema di generatori le immagini dei vettori della base canonica, che sono le colonne di $A$ \`e lo spazio delle colonne di 
+$A$.
+\begin{equation}
+Im(T_A)=C(A)
+\end{equation}
+\section{Teorema della nullit\`a pi\`u rango}
+Sia $V$ uno spazio reale finitamente generato e $f:V\rightarrow V'$ una funzione lineare, allora:
+\begin{equation}
+dim(V)=dim(Ker(f))+dim(Im(f))
+\end{equation}
+\subsubsection{Dimostrazione}
+Siano $n$ e $k$ rispettivamente le dimensioni di $V$ e di $Ker(f)$, e sia $A=\{\underline{a_1},\cdots,\underline{a_k}\}$ una base di $Ker(f)$. Si completi tale base ad una base 
+$\beta$ dello spazio $V$: $\beta=\{\underline{a_1},\cdots,\underline{a_k}, \underline{b_{k+1}},\cdots,\underline{b_n}\}$. Si vuole mostrare che $\{f(\underline{b_{k+1}}),\cdots,
+f(\underline{b_n})\}$ \`e una base di $Im(f)$. Essendo stato precedentemente dimostrato che $\{f(\underline{a_1}),\cdots,f(\underline{a_k}),$ \\
+$f(\underline{b_{k+1}}),\cdots,f(\underline{b_n})\}$ \`e una base di $Im(f)$ ed essendo $\{f(\underline{a_1}),\cdots,f(\underline{a_k})\}$ vettori nulli, allora anche $
+\{f(\underline{b_{k+1}}),\cdots,f(\underline{b_n})\}$. Esplicitando l'indipendenza lineare: se $\underline{0}=\sum\limits_{i=k+1}^n\lambda_i f(\underline{b_i})=f(\sum\limits_{i=k
++1}^n \lambda_i\underline{b_i})$, allora $\sum\limits_{i=k+1}^n\lambda_i \underline{b_i}\in Ker(f)$, perci\`o esistono $\lambda_1,\cdots,\lambda_k$ tali che $\sum\limits_{i=k+1}
+^n\lambda_i \underline{b_i}=\sum\limits_{i=1}^n\lambda_i\underline{a}$. Riscrivendo l'equazione si ottiene:$\sum\limits_{i=1}^n\lambda_i\underline{a}-\sum\limits_{i=k+1}^n
+\lambda_i\underline{b_i}=\underline{0}$. Essendo $\beta$ una base, segue che $\lambda_i=0\;\forall i=1,\cdots,n$.
+\subsection{Corollario}
+Sia $f:V\rightarrow V'$ una funzione lineare:
+\begin{enumerate}
+\item Se $f$ \`e un isomorfismo allora $dim(V)=dim(V')$
+\item Se $dim(V)=dim(V')$ allora \`e equivalente dire che:
+\begin{enumerate}
+\item $f$ \`e un isomorfismo.
+\item $f$ \`e iniettiva.
+\item $f$ \`e suriettiva.
+\end{enumerate}
+\end{enumerate}
+\subsubsection{Dimostrazione}
+Si provi il punto $\mathbf{1}$: Per il teorema della nullit\`a pi\`u rango si ha: $dim(V)=dim(Ker(f))+dim(Im(f))$. Poich\`e $f$ \`e iniettiva allora $dim(Ker(f))=0$ ed essendo 
+suriettiva si ha $V'=Im(f)$, pertanto $dim(V)=0+dim(V')$, da cui la tesi.\\
+Si provi il punto $\mathbf{2}$: segue immediatamente dal punto $\mathbf{1}$ e dal legame tra dimensioni di nucleo e immagine e propriet\`a della funzione.
+\subsection{Osservazione}
+Applicando il teorema della nullit\`a pi\`u rango alla funzione lineare $T_A:\mathbb{R^n}\rightarrow\mathbb{R^m}$, si osserva che la dimensione dello spazio delle soluzioni del
+sistema lineare $A\underline{x}=\underline{0}$ \`e uguale al numero di colonne di $A$ che non contengono pivot, ovvero la nullit\`a di $A$ ($N(A)$).
+\section{Matrici rappresentative}
+Sia $V$ uno spazio vettoriale reale di dimensione $n$ e $\beta=\{\underline{b_1},\cdots,\underline{b_n}\}$ una sua base e $V'$ uno spazio vettoriale reale e $\underline{c_1},\cdots, \underline{c_n}$ suoi elementi. Allora esiste un'unica funzione lineare $f:V\rightarrow V'$ tale che $f(\underline{b_i})=\underline{c_i}\;\forall i=1,\cdots,n$
+\subsubsection{Dimostrazione}
+Dato $\underline{v}\in V$ lo si scriva come $\sum\limits_{i=1}^nv_i\underline{b_i}$ e sia posto $f(\underline{v})=\sum\limits_{i=1}^nv_i\underline{c_i}$. \`E immediato verificare
+che $f$ \`e lineare e che $f(\underline{b_i})=\underline{c_i}$. Sia ora $g:V\rightarrow V'$ un'altra funzione lineare tale che $g(\underline{b_i})=\underline{c_i}$, allora:
+$g(\underline{v})=g(\sum\limits_{i=1}^nv_i\underline{b_i})=\sum\limits_{i=1}^nv_ig(\underline{b_i})=\sum\limits_{i=1}^nv_i\underline{c_i}=f(\underline{v})$, che prova l'unicit\`a 
+di $f$.
+\subsection{Definizione di matrice rappresentativa}
+Sia $f:V\rightarrow V'$ una funzione lineare e $A=\{\underline{a_1},\cdots, \underline{a_n}\}$ la base di $V$ e $\beta=\{\underline{b_1},\cdots, \underline{b_n}\}$ la base di 
+$V'$. La funzione $f$ \`e determinata dalle immagini dei vettori della base di $A$, ovvero da $\{f(\underline{a_1}),\cdots, f(\underline{a_n})\}$ che possono essere scritti 
+come combinazioni lineari dei vettori della base $\beta$:
+\begin{center}
+$f(\underline{a_1}) =\alpha_{11}\underline{b_1} + \alpha_{21}\underline{b_2}+\cdots + \alpha_{m1}\underline{b_m}$\\
+$f(\underline{a_2}) =\alpha_{12}\underline{b_1} + \alpha_{22}\underline{b_2}+\cdots + \alpha_{m2}\underline{b_m}$\\
+$\cdot\;\;\;\;\;\;\;\;\cdot$\\
+$\cdot\;\;\;\;\;\;\;\;\cdot$\\
+$f(\underline{a_n}) =\alpha_{1n}\underline{b_1} + \alpha_{2n}\underline{b_2}+\cdots + \alpha_{mn}\underline{b_m}$\\
+\end{center}
+Sia $M_\beta^A(f)=[a_{ij}]$ la matrice dei coefficienti cos\`i ottenuti. Tale matrice \`e detta matrice rappresentativa di $f$ rispetto alle basi $A$ e $\beta$. Se $V=V'$ e 
+$A=\beta$ la matrice viene denotata come $M_A(f)$.
+\subsection{Utilizzo delle matrici rappresentative}
+L'importanza delle matrici rappresentative \`e che permettono di ridurre lo studio di una qualsiasi funzione lineare tra due spazi vettoriali $V$ e $V'$ di dimensioni $n$ ed $m$ 
+a quello di una funzione lineare tra $\mathbb{R^n}$ e $\mathbb{R^m}$ definita dal prodotto per una matrice. Si fissi la notazione: sia $f:V\rightarrow V'$ una funzione e $A=\{
+\underline{a_1},\cdots,\underline{a_n}\}$ base di $V$ e $\beta=\{\underline{b_1},\cdots,\underline{b_n}\}$ base di $V'$. Siano $T_A:V\rightarrow\mathbb{R^n}$ e $T_\beta:V'\rightarrow\mathbb{R^m}$ gli isomorfismi che ad ogni vettore associano le sue componenti sulla base. Siano poi $C:=M_A^\beta(f)$ la matrice rappresentativa di $f$ 
+rispetto a $A$ e $\beta$ e $T_C:\mathbb{R^n}\rightarrow\mathbb{R^m}$ la funzione lineare definita dalla moltiplicazione per $A$. Secondo la seguente notazione $T_C=T_\beta\circ
+f\circ T_{A^{-1}}$, ovvero se $(v_1,\cdots, v_n)$ sono le componenti di $\underline{v}$ sulla base $A$, allora le componenti $(w_1,\cdots,w_m)$ di $\underline{w}=f(\underline{v})$ si ottengono moltiplicando la matrice $C$ per $(v_1,\cdots, v_n)$
+\subsubsection{Dimostrazione}
+Dato un vettore $\underline{v}\in V$ si pu\`o scrivere sulla base $A$ come $\underline{v}=\sum\limits_{i=1}^nv_i\underline{a_i}$, per cui la sua immagine \`e data da: 
+$f(\underline{v})=f(\sum\limits_{i=1}^nv_i\underline{a_i})=\sum\limits_{i=1}^nv_if(\underline{a_i})=\sum\limits_{i=1}^nv_i\sum\limits_{j=1}^m\alpha_{ji}\underline{b_j}=
+\sum\limits_{j=1}^m(\sum\limits_{i=1}^n\alpha_{ji}v_i)\underline{b_j}$. Ovvero, se $f(\underline{v})=\underline{w}$ e $\underline{w}=\sum\limits_{j=1}^mw_j\underline{b_j}$ si
+ottiene che $w_j=\sum\limits_{i=i}^n\alpha_{ji}v_i$, ovvero: \\
+$
+\left[\begin{matrix}
+w_1\\
+w_2\\
+\cdots\\
+\cdots\\
+\cdots\\
+w_m
+\end{matrix}\right]
+=
+\left[\begin{matrix}
+\alpha_{11} & \alpha_{12}& \cdots &\alpha_{1n}\\
+\alpha_{21} & \alpha_{22}& \cdots &\alpha_{2n}\\
+\cdots & \cdots & \cdots &\cdots\\
+\cdots & \cdots & \cdots &\cdots\\
+\cdots & \cdots & \cdots &\cdots\\
+\alpha_{m1} & \alpha_{m2}& \cdots &\alpha_{1mn}\\
+\end{matrix}\right]
+\left[\begin{matrix}
+v_1\\
+v_2\\
+\cdots\\
+v_n
+\end{matrix}\right]
+$\\
+In altre parole: $(w_1,\cdots, w_m)=T_C(v_1,\cdots,v_n)$
+\subsection{Osservazione}
+Per trovare il nucleo o l'immagine di una funzione lineare tra due spazi vettoriali $V$ e $V'$ di dimensioni $n$ e $m$ si possono considerare il nucleo o l'immagine  della 
+funzione lineare tra $\mathbb{R^n}$ e $\mathbb{R^m}$ definita dalla matrice rappresentativa:
+\begin{center}
+\begin{equation}
+Ker(T_C)=T_A(Ker(f))\;\;\;\;\;\;\;\;Im(T_C)=T_\beta(Im(f))
+\end{equation}
+\end{center}
+\subsection{Cambiamenti di base}
+Sia $V$ uno spazio vettoriale di dimensione $n$ e siano $A=\{\underline{a_1},\cdots,\underline{a_n}\}$ e $\beta=\{\underline{b_1},\cdots,\underline{b_n}\}$ basi di $V$. Si dice 
+matrice di transizione da $A$ a $\beta$ la matrice $M_A^\beta(Id_V)$ (indicata con $M_A^\beta$), dove $Id_V$ \`e la funzione identit\`a da $V$ a $V$.
+\subsubsection{Osservazioni}
+\begin{itemize}
+\item La matrice $M_A^\beta$ \`e quindi la matrice quadrata di ordine $n$ che ha sulle colonne le componenti di $A$ rispetto alla base $\beta$ e permette di trovare le coordinate
+dei vettori di $V$ sulla base $\beta$ se sono note le componenti della base $A$: se $(x_1,\cdots,x_n)=T_A(\underline{v})$ e $(y_1,\cdots,y_n)=T_\beta(\underline{v})$ sono le
+coordinate di $\underline{v}$ nelle due basi, allora:
+\begin{equation}
+\left[\begin{matrix}
+y_1\\
+y_2\\
+\cdots\\
+\cdots\\
+\cdots\\
+y_n
+\end{matrix}\right]
+=M_A^\beta
+\left[\begin{matrix}
+x_1\\
+x_2\\
+\cdots\\
+\cdots\\
+\cdots\\
+x_n
+\end{matrix}\right]
+\end{equation}
+\item Dalla formula sopra descritta \`e facile capire come per trovare le coordinate dei vettori di $V$ sulla base $A$ se sono note le componenti sulla base $\beta$ \`e 
+necessario moltiplicare per l'inversa della matrice $M_A^\beta$. Pertanto la matrice $M_\beta^A$ di transizione da $\beta$ ad $A$ \`e l'inversa della matrice di transizione da 
+$A$ a $\beta$:
+\begin{equation}
+(M_A^\beta)^{-1}=M^A_\beta
+\end{equation}
+\end{itemize}
+\subsubsection{Gli endomorfismi}
+Gli endomorfismi sono delle funzioni lineari da uno spazio $V$ in s\`e stesso. Sia $V$ uno spazio vettoriale di dimesione $n$ e siano $A=\{\underline{a_1},\cdots,\underline{a_n}
+\}$ e $\beta=\{\underline{b_1},\cdots,\underline{b_n}\}$ basi di $V$, allora 
+\begin{equation}
+M_\beta(f)=M_A^\beta M_A(f)M_\beta^A
+\end{equation}
+\textbf{Dimostrazione:}\\
+Si ponga $A=M_A(f)$, $B=M_\beta(f)$ e $P=M_A^\beta$. Se il vettore $\underline{v}$ ha coordinate $\underline{x}=(x_1,\cdots,x_n)$ rispetto alla base $A$ e coordinate 
+$\underline{y}=(y_1,\cdots,y_n)$ rispetto alla base $\beta$, il vettore $f(\underline{v})$ ha coordinate $A\underline{x}$ rispetto ad $A$ e coordinate $\beta\underline{y}$ 
+rispetto alla base $\beta$. Poich\`e la matrice $P$ realizza il cambio di coordinate tra $A$ e $\beta$ si ha $P\underline{x}=\underline{y}$ e $PA\underline{x}=B\underline{y}$, 
+da cui segue: $PA\underline{x}=BP\underline{x}$, ovvero $PA=BP\Rightarrow PAP^{-1}=B$, come volevasi dimostrare.

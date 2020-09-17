@@ -1,0 +1,94 @@
+\chapter{Piani e rette nello spazio}
+\section{Il piano}
+\subsection{Determinare l'equazione di un piano partendo dal vettore normale e da un punto}
+Considero il vettore normale $\underline{N}=(a,b,c)$ e il punto $P=(x_p;y_p;z_p)$ e il punto generico $Q=(x;y;z)$. Considero il vettore $PQ=\underline{v}=(x-x_p;y-y_p;z-z_p)$
+e lo pongo perpendicolare a $\underline{N}$, perci\`o: $\underline{N}\underline{v}=0$.\\
+$\underline{N}\underline{v}=ax-ax_p+by-by_p+cz-cz_p=0$\\
+$ax+by+cz+(-ax_p-by_p-cz_p)=0$\\
+Ponendo il numero $(-ax_p-by_p-cz_p)=d$ ottengo l'equazione cartesiana del piano:
+\begin{center}
+$ax+by+cz+d=0$
+\end{center}
+\subsection{Determinare l'equazione di un piano partendo da tre punti non allineati}
+Dai tre punti posso generare due vettori con l'origine nello stesso punto perci\`o posso considerare il punto $P=(x_p;y_p;z_p)$, i vettori $\underline{v}=(v_1;v_2;v_3)$ e 
+$\underline{w}=(w_1;w_2;w_3)$ e il punto generico $S=(x;y;z)$. Pertanto si trover\`a il vettore $PS=\underline{u}=(x-x_p;y-y_p;z-z_p)$\\
+$S\in\pi\Leftrightarrow \exists\lambda,\mu\in\mathbb{R}:\underline{u}=\lambda\underline{v}+\mu\underline{w}$.\\
+Perci\`o: $(x-x_p;y-y_p;z-z_p)=\lambda(v_1;v_2;v_3)+\mu(w_1;w_2;w_3)=(\lambda v_1+\mu w_1;\lambda v_2+\mu w_2;\lambda v_3+\mu w_3)$\\
+In questo modo si trovano le equazioni parametriche del piano:
+\begin{center}
+\begin{equation}
+\begin{cases}
+x=\lambda v_1+\mu w_1+x_p\\
+y=\lambda v_2+\mu w_2+y_p\\
+z=\lambda v_3+\mu w_3+z_p\\
+\end{cases}
+\end{equation}
+\end{center}
+\subsection{Conversione tra equazione parametrica e cartesiana}
+Per convertire da equazione parametrica e cartesiana devo scegliere due variabili e porle uguali ai parametri e successivamente ricavare la terza. Nel processo inverso devo 
+isolare i due parametri in modo da trovare l'equazione cartesiana.
+\section{La retta}
+\subsection{Determinare l'equazione di una retta da un punto e da un vettore}
+Si consideri il punto $P=(x_p;y_p;z_p)$, il vettore $\underline{v}=(v_1;v_2;v_3)$ con la stessa direzione della retta. Considerando il punto generico $Q=(x;y;z)$ questo 
+appartiene alla retta se il vettore che forma con P \`e un proporzionale a \underline{v}: $(x-x_p;y-y_p;z-z_p)=(\lambda v_1;\lambda v_2;\lambda v_3)$. Attraverso questo 
+metodo ottengo le equazioni parametriche della retta:
+\begin{center}
+\begin{equation}
+\begin{cases}
+x=x_p+\lambda v_1\\
+y=y_p+\lambda v_2\\
+z=z_p+\lambda v_3\\
+\end{cases}
+\end{equation}
+\end{center}
+Per trovarne le equazioni cartesiane isolo per il parametro.
+\subsection{Fascio dei parametri di sostegno a una retta}
+Scritta la retta in forma cartesiana, questa apparir\`a come intersezione di due piani. Gli infiniti piani che intersecano la retta si indicano come combinazione lineare dei
+primi due, detti generatori del fascio:
+\begin{center}
+\begin{equation}
+F:\lambda(ax+by+cz+d)+\mu(a'x+b'y+c'z+d')=0
+\end{equation}
+\end{center}
+\section{Posizione reciproca}
+\subsection{Due rette}
+Due rette possono essere parallele (con i vettori proporzionali), incidenti(intersezione non vuota, complanari) o sghembe (intersezione vuota, non complanari). Se il 
+prodotto scalare di due rette incidenti o sghembe fa 0 sono perpendicolari. Date due rette complanari per trovare il piano che le contiene creo il fascio di sostegno ad una retta e ci sostituisco un punto dell'altra.
+\section{Due piani}
+Due piani possono essere paralleli (vettori normali proporzionali) o incidenti (prodotto scalare dei vettori normali 0 se perpendicolari).
+\section{Retta e piano}
+Possono essere paralleli, o la retta essere contenuta nel piano quando il prodotto scalare tra il vettore normale al piano e quello che individua la retta fa 0, sono
+incidenti se \`e diverso da 0, ortogonali se i due vettori sono proporzionali.
+\section{Le distanze}
+\subsection{Distanza tra due punti}
+$\bar{AB}=\sqrt{(x_A-x_B)^2+(y_A-y_B)^2+(z_A-z_B)^2}$
+\subsection{Distanza punto-piano}
+Considerando il punto $P=(x_p;y_p;z_p)$, il piano $\pi:ax+by+cz+d=0$ e il punto $Q(x_a;y;_a;z_a)\in\pi$ e H il piede della perpendicolare a P considero il vettore HP come
+la proiezione ortogonale di QP sulla direzione normale al piano, il cui versore $\underline{n}=\frac{1}{\sqrt{a^2+b^2+c^2}}\cdot(a;b;c)$, perci\`o il vettore $HP=(QP \underline{n})\underline{n}$, $d(P,\pi)=|qp\underline{n}|=|(x_p-x_q;y_p-y_q;z_p-z_q)\frac{(a;b;c)}{\sqrt{a^2+b^2+c^2}}|=$\\
+$=\frac{1}{\sqrt{a^2+b^2+c^2}}|a(x_p-x_q)+b(y_p-y_q)+c(z_p-z_q)|=$\\
+$=\frac{|ax_p+by_p+cz_p+(-ax_q-by_q-cz_q)|}{\sqrt{a^2+b^2+c^2}}$, considerando che $d=-ax_q-by_q-cz_q$\\
+\begin{center}
+\begin{equation}
+=\frac{|ax_p+by_p+cz_p+d|}{\sqrt{a^2+b^2+c^2}}
+\end{equation}
+\end{center}
+\subsection{Distanza punto retta}
+\begin{itemize}
+\item Ricavo $\pi\bot r$, $P\in\pi$, trovo $H:HP\bot r$, distanza tra $P$ e $H$.
+\item $r$ individuata da $\underline{v}$, $Q(t)\in r=(x(t);y(t);z(t))$; $QP\cdot\underline{v}=0$, ricavo $t=t_0$ in modo che $QP\bot r$, distanza tra $P$ e $Q(t_0)$.
+\end{itemize}
+\subsection{Distanza tra due piani}
+\begin{itemize}
+\item 0 se incidenti.
+\item Considero un punto su un piano e ricavo la distanza con l'altro piano
+\end{itemize}
+\subsection{Distanza tra due rette}
+\begin{itemize}
+\item 0 se incidenti.
+\item se parallele scelgo un punto sulla prima e faccio la sua distanza con la seconda.
+\item Se sghembe:
+\begin{itemize}
+\item Scelgo un punto su ogni retta in modo che il segmento individuato sia perpendicolare a entrambe e faccio la distanza tra due punti
+\item Trovo un piano che contiene una retta e parallelo all'altra e faccio la distanza di un punto della retta parallela dal piano.
+\end{itemize}
+\end{itemize}

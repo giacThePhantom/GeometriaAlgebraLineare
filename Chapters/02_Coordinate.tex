@@ -1,0 +1,28 @@
+\chapter{Coordinate}
+Ponendo Oxyz come un sistema di assi cartesiani ortogonali, ad ogni vettore vengono associati tre numeri, la differenza di ogni coordinata del punto finale e del punto iniziale. Le componenti del vettore sono queste tre coordinate moltiplicate per il versore di ogni asse cartesiano. \underline{i}, \underline{j}, \underline{k} sono i versori
+dei tre assi cartesiani.
+\section{Operazioni considerando le coordinate}
+$\underline{v}=(v_1;v_2;v_3)$ e $\underline{w}=(w_1;w_2;w_3)$
+\subsection{Somma di due vettori}
+$\underline{v}+\underline{w}=(v_1+w_1;v_2+w_2;v_3+w_3)$
+\subsection{Prodotto per uno scalare}
+$\lambda\underline{v}=(\lambda v_1;\lambda v_2;\lambda v_3)$
+\subsection{Modulo di un vettore}
+Si utilizza Pitagora sulle tre componenti:\\
+$|\underline{v}|^2=v_1^2+v_2^2+v_3^2$
+\subsection{Prodotto scalare}
+$\underline{v}\underline{w}=v_1w_1+v_2w_2+v_3w_3=\sum\limits_{i=1}^3 v_iw_i$
+\subsubsection{Dimostrazione}
+Considero i due vettori e il vettore $\underline{u}=\underline{v}-\underline{w}$. Il vettore differenza geometricamente congiunge le punte degli altri vettori formando un
+triangolo. Pertanto posso calcolarne il modulo come differenza tra i due vettori:\\
+$|\underline{u}|^2=(v_1-w_1)^2+(v_2-w_2)^2+(v_3-w_3)^2=$\\
+$=v_1^2+v_2^2+v_3^2+v_1^2+v_2^2+v_3^2+w_1^2+w_2^2+w_3^2-2(v_1w_1+v_2w_2+v_3w_3)=$\\
+$=|\underline{v}|^2+|\underline{w}|^2-2(v_1w_1+v_2w_2+v_3w_3)$.\\
+Considerando il vettore differenza invece come lato del triangolo e utilizzando le equazioni trigonometriche per trovarne il valore ottengo che:\\
+$| \underline{u}|^{2}=| \underline{w}|^{2}\sin^{2}\theta+|\underline{v}|^2+|\underline{w}|^2\cos^2\theta-2|\underline{v}||\underline{w}|\cos^2\theta=$\\
+$=| \underline{w}|^2(\sin^2\theta+\cos^2\theta)+|\underline{v}|^2-2\underline{v}\underline{w}=$\\
+$=|\underline{v}|+|\underline{v}|-2\underline{v}\underline{w}$.\\
+Eguagliando i due valori:\\
+$|\underline{v}|^2+|\underline{w}|^2-2(v_1w_1+v_2w_2+v_3w_3)=|\underline{v}|+|\underline{v}|-2\underline{v}\underline{w}$\\
+$-2(v_1w_1+v_2w_2+v_3w_3)=-2\underline{v}\underline{w}$\\
+$\underline{v}\underline{w}=v_1w_1+v_2w_2+v_3w_3$.

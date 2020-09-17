@@ -1,0 +1,143 @@
+\chapter{Determinante}
+Il determinante \`e una funzione che a una matrice quadrata assegna uno scalare.
+\section{Sottomatrici}
+Sia $A\in M_n(\mathbb{R})$, $A_{IJ}$ la sottomatrice ottenuta da $A$ eliminando la riga $i$ e la colonna $j$, $A_{IJ}\in M_{n-1}(\mathbb{R})$.
+\section{Definizione di determinante}
+$A\in M_n(\mathbb{R}), A=[a_{ij}]$, il determinante di $A, det(A)$ \`e definito:
+\begin{itemize}
+\item Se $n=1$, $det(A)=a_{11}$.
+\item Se $n\neq 1$, $det(A)=\sum\limits_{i=1}^n(-1)^{i+1}a_{i1}det(A_{I1})$
+\end{itemize}
+O, nel caso delle matrici due per due come il prodotto degli elementi della diagonale discendente meno la diagonale ascendente. 
+\section{Matrice triangolare alta}
+Matrice $A$ triangolare alta: tutti gli argomenti sotto la diagonale principale sono zero ($a_{ij}=0$ se $i>j$). Il determinante di una matrice triangolare alta \`e il 
+prodotto degli elementi della diagonale principale. Una matrice quadrata a scalini \`e triangolare alta. Se la matrice ha rango massimo contiene n pivot che stanno sulla 
+diagonale principale, pertanto il determinante \`e il prodotto dei pivot ed \`e diverso da 0. Se il rango non \`e massimo sulla diagonale principale c'\`e almeno uno zero
+e quindi il determinante \`e zero. Perci\`o una matrice quadrata a scalini ha rango massimo se e solo se il $det(A)\neq 0$. 
+\section{Teorema di Laplace}
+$A\in M_n(\mathbb{R}),det(A)=\sum\limits_{i=1}^n(-1)^{i+j}a_{ij}det(A_{IJ}),\forall j<n$.\\
+$det(A)=\sum\limits_{j=1}^n(-1)^{i+j}a_{ij}det(A_{IJ}),\forall i<n$.
+\subsection{Conseguenze}
+\begin{itemize}
+\item Se una matrice ha una riga o una colonna di zeri il determinante \`e zero.
+\item $det(A)=det(A^T)$
+\end{itemize}
+\section{Teorema di Binet}
+Se $A,B\in M_n(\mathbb{R})$, $det(AB)=det(A)det(B)$.
+\subsection{Corollario}
+Se $A$ \`e invertibile, con inversa $A^{-1}$, allora $det(A^{-1})=\frac{1}{det(A)}$
+\section{Determinante matrici associate ad operazioni}
+\begin{itemize}
+\item $det(S_{ij})=-1$.
+\item $det(D_i(\lambda))=\lambda$.
+\item $det(E_{ij}(\mu))=1$.
+\end{itemize}
+\subsection{Cambio del determinante dopo un'operazione elementare}
+\begin{itemize}
+\item Se faccio uno scambio $det(A')=-det(A)$
+\item Se moltiplico per uno scalare $det(A')=\lambda det(A)$
+\item Se aggiungo alla riga $i$ la riga $j$ moltiplicata per $\mu$ il determinante non cambia. 
+\end{itemize}
+\section{Determinante di una matrice ridotta a scalini}
+Per ridurre una matrice a scalini utilizzo solo $S_{ij}$ e $E_{ij}(\mu)$, pertanto il determinante della matrice ridotta a scalini $det(A')=(-1)^s det(A)$, dove $s$ \`e il 
+numero di scambi.\\
+Data $A\in M_n(\mathbb{R})$ Sono equivalenti le seguenti proposizioni:
+\begin{itemize}
+\item $A$ ha rango $n$.
+\item $A$ \`e invertibile.
+\item $det(A)\neq 0$.
+\end{itemize}
+$A$ ha rango $n$ $\Leftrightarrow$ una sua forma a scalini $A'$ ha rango $n$ $\Leftrightarrow det(A')\neq 0\Leftrightarrow det(A)\neq 0$. Come conseguenza di questa proposizione
+si pu\`o determinare se un insieme di ennuple $\{\underline{v_1}, \underline{v_2}, \cdots, \underline{v_k}\}$ sia una base: lo \`e solo se il determinante della matrice le cui 
+colonne sono le ennuple abbia determinante diverso da zero.
+\section{Il prodotto vettoriale}
+$\underline{v},\underline{w}\in V^3$, vettori geometrici nello spazio, il prodotto vettoriale $\underline{v}\times\underline{w}$ si definisce come:
+\begin{itemize}
+\item $\underline{0}$ se $\underline{v}=0\lor\underline{w}=0\lor\underline{v}\,//\,\underline{w}$
+\item Il vettore di modulo $|\underline{v}||\underline{w}|\sin \phi$, direzione ortogonale al piano in cui giacciono $\underline{v}$ e $\underline{w}$ e verso dato dalla 
+regola della mano destra.
+\end{itemize}
+Il modulo del prodotto vettoriale \`e l'area del parallelogramma individuato dai due vettori.\\
+Utilizzando le componenti: $\underline{v}\times\underline{w}=(v_2w_3-v_3w_2)\underline{i}+(w_1v_3-v_1w_3)\underline{j}+(v_1w_2-w_1v_2)\underline{k}$.
+\subsection{Propriet\`a}
+$\forall\underline{v},\underline{w},\underline{w}\in\mathbb{R}^3$
+\begin{itemize}
+\item $\underline{v}\times\underline{w}=-\underline{w}\times\underline{v}$
+\item $(\lambda\underline{v})\times\underline{w}=\underline{v}\times(\lambda\underline{w})=\lambda\underline{v}\times\underline{w}$
+\item $(\underline{v}+\underline{w})\times\underline{w}=\underline{v}\times\underline{w}+\underline{w}\times\underline{w}$
+\item $\underline{w}\times(\underline{v}+\underline{w})=\underline{w}\times\underline{v}+\underline{w}\times\underline{w}$
+\end{itemize}
+\subsection{Dimostrazione della formula}
+Utilizzando la definizione \`e possibile calcolare direttamente il valore del prodotto vettoriale tra i versori degli assi:$\underline{i} \times \underline{i} = \underline{0}
+\quad\underline{j} \times \underline{j} = \underline{0}\quad\underline{k} \times \underline{k} = \underline{0}\quad\underline{i} \times \underline{j} = \underline{k}\quad
+\underline{i} \times \underline{k} = -\underline{j}\quad\underline{j} \times \underline{k} = \underline{i}$. Utilizzando queste formule si dimostra facilmente che il prodotto 
+vettoriale sia dato dalla formula:
+\begin{equation}
+\underline{v}\times\underline{w}=(v_2w_3-v_3w_2;w_1v_3-v_1w_3;v_1w_2-w_1v_2)
+\end{equation}
+Un modo per calcolare il prodotto vettoriale senza ricorrere alla formula \`e calcolare il determinante della matrice con sulla prima riga i versori del piano, sulla seconda $\underline{v}$ e sulla terza $\underline{w}$:$A=
+\left[\begin{matrix}
+i & j & k \\
+v_1 & v_2 & v_3 0\\
+w_1 & w_2 & w_3 \\
+\end{matrix}\right]$
+Ora $det(A)=(v_2w_3-v_3w_2)\underline{i}+(w_1v_3-v_1w_3)\underline{j}+(v_1w_2-w_1v_2)\underline{k}$
+\subsection{Prodotto misto}
+Dati $\underline{v},\underline{w},\underline{z}$ il prodotto $\underline{v}(\underline{w}\times\underline{z})=det
+\left[\begin{matrix}
+v_1 & v_2 & v_3 \\
+w_1 & w_2 & w_3 \\
+z_1 & z_2 & z_3 \\
+\end{matrix}\right]
+$, il prodotto \`e nullo se e solo se i tre vettori sono linearmente dipendenti. \`E l'area del parallelepipedo individuato dai tre vettori.
+\subsection{Applicazioni nella geometria}
+\subsubsection{Determinare se due rette sono complanari}
+Il determinante pu\`o essere utilizzato per determinare se due rette nello spazio sono complanari: date due rette qualsiasi $r$ e $s$ individuate rispettivamente dai 
+vettori $\underline{v}$ e $\underline{w}$, comunque presi due punti $P\in r$ e $Q\in s$, le rette sono complanari se e solo se i vettori $\underline{v},\underline{w}$ e $PQ$ 
+sono linearmente dipendenti.
+\subsubsection{Trovare l'equazione cartesiana di un piano}
+Determinando l'equazione di un piano da tre punti non allineati $P, R$ e $S$ e i vettori $\underline{v}=PR$ e $\underline{w}=PS$, un punto $Q=(x;y;z)$ sta sul piano se e 
+solo se esistono due numeri reali $t$ e $s$ tali che $PQ=t\underline{v}+s\underline{w}$, ovvero se i tre vettori sono linearmente dipendenti, ovvero se il determinante della
+matrice: $A=
+\left[\begin{matrix}
+x-x_p & v_1 & w_1 \\
+y-y_p & v_2 & w_2 \\
+z-z_p & v_3 & w_3 \\
+\end{matrix}\right]$
+Sia uguale a $0$.
+\subsubsection{Determinare la direzione ortogonale a due rette non parallele}
+Date due rette $r$ e $s$ i cui vettori $\underline{v}$ e $\underline{w}$ non siano proporzionali, il prodotto vettoriale $\underline{v}\times\underline{w}$ \`e un vettore
+ortogonale a $\underline{v}$ e a $\underline{w}$.
+\section{Determinanti e sistemi lineari}
+Si considerino i sistemi lineari quadrati, ovvero di $n$ equazioni in $n$ incognite.
+\subsection{Teorema di Cramer}
+Dato un sistema quadrato di ordine $n$, con incognite $x_1, x_2, \cdots, x_n$, matrice dei coefficienti $A$ e colonna dei termini noti $\underline{b}$, tale che $detA\neq 0$
+allora il sistema ammette un'unica soluzione. Indicando con $A_j(\underline{b})$ la matrice che si ottiene sostituendo alla colonna $j$ della matrice $A$ la colonna dei 
+termini noti, tale soluzione \`e data da: $x_1=\frac{detA_1(\underline{b})}{detA},\cdots, x_j=\frac{detA_j(\underline{b})}{detA}, x_n=\frac{detA_n(\underline{b}))}{detA}$
+\subsubsection{Dimostrazione}
+Sia $I_j(\underline{x})$ la matrice ottenuta dalla matrice identica sostituendo alla colonna $j$ la colonna delle incognite, si ha $AI_j(\underline{x})=A_j(\underline{b})$ se 
+e solo se $A\underline{x}=\underline{b}$. Applicando il teorema di Binet si ha che:
+\begin{center}
+$det(A_j(\underline{b}))=det(AI_j(\underline{x}))=det(A)det(I_j(\underline{x}))=x_jdet(A)$
+\end{center}
+\subsubsection{Cofattore o complemento algebrico}
+Sia $A=[a_{ij}]$ una matrice quadrata. \`E definito cofattore o complemento algebrico dell'elemento $a_{ij}$ lo scalare $a'_{ij}=(-1)^{i+j}det(A_{ij})$.
+\subsection{Corollario del teorema di Cramer}
+Sia $A=[a_{ij}]$ una matrice quadrata invertibile, e sia $A'$ la matrice dei cofattori di $A$. Allora la matrice inversa \`e la trasposta della matrice dei cofattori divisa per
+il determinante di $A$:
+\begin{equation}
+A^{-1}=\dfrac{1}{det(A)}(A')^T
+\end{equation}
+\subsubsection{Dimostrazione} Siano $\underline{e_1}=(1;0;\cdots;0),\underline{e_2}=(0;1;0;\cdots;0);\underline{e_n}=(0;0;\cdots;1)$. Considerando il sistema lineare: $A 
+\underline{x}=\underline{e_j}$, l'unica soluzione \`e $A^{-1}e_j$, che \`e la $j$-esima colonna della matrice $A^{-1}$. Per il teorema di Cramer la soluzione di tale sistema \`e $\bar{a}_{ij}=x_i=\frac{det(A_i(\underline{e_j}))}{det(A)}=\frac{a'_{ji}}{det(A)}$ 
+\subsubsection{Osservazione}
+Se $A$ \`e una matrice di ordine 2:
+$\left[\begin{matrix}
+a & b \\
+c & d\\
+\end{matrix}\right]$
+allora la sua matrice inversa \`e:$A^{-1}=\dfrac{1}{det(A)}
+\left[\begin{matrix}
+d & -b \\
+-c & a\\
+\end{matrix}\right]$

@@ -1,0 +1,61 @@
+\chapter{Sistemi lineari}
+\section{Le ennuple}
+Si indica con $\mathbb{R^n}$ l'insieme delle n-uple dei numeri reali $\{a_1, a_2, \cdots, a_n|a_i\in\mathbb{R}\}$.
+\begin{itemize}
+\subsection{Operazioni tra ennuple}
+\item Somma tra n-uple: si sommano i numeri termine a termine: $(a_1, a_2, \cdots, a_n)+(b_1, b_2, \cdots, b_n)=(b_1+a_1, b_2+a_2, \cdots, b_n+a_n)$
+\begin{itemize}
+\item Commutativa, associativa, esiste elemento neutro, esiste elemento opposto.
+\end{itemize}
+\item Prodotto per uno scalare: $\lambda(a_1, a_2, \cdots, a_n)=(\lambda a_1, \lambda a_2, \cdots,\lambda a_n)$
+\end{itemize}
+\section{Le equazioni lineari}
+Un'equazione lineare \`e un'equazione della forma $a_1x_1+a_2x_2+\cdots+a_nx_n=b$.
+\section{I sistemi lineari}
+Un sistema lineare di m equazioni in n incognite \`e un sistema di equazioni della forma:
+$\begin{cases}a_{11}x_1+a_{12}x_1+\cdots+a_{1n}x_n=b_1\\a_{12}x_1+a_{22}x_2+\cdots+a_nx_n=b_2\\ \cdots\\ \cdots \\ a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n=b_m \end{cases}$\\
+Un sistema pu\`o essere:
+\begin{itemize}
+\item compatibile: con soluzione
+\item incompatibile: senza soluzione
+\item omogeneo: tutti i termini noti valgono 0, se un sistema \`e omogeneo \`e compatibile($\exists (0_1, 0_2, \cdots, 0_n)$).
+\end{itemize}
+La soluzione di un sistema \`e la n-upla di n elementi che verifica tutte le equazioni del sistema: $(t_1, t_2, \cdots, t_n)$.
+\section{Operazioni elementari di un sistema lineare}
+\begin{itemize}
+\item Scambiare di posto due equazioni: ($S_{i,j}$)
+\item Moltiplicazione di un'equazione per uno scalare$\neq 0$ ($D_i(\lambda)$)
+\item Sostituire un'equazione con l'equazione stessa sommata al multiplo di un'altra appartenente al sistema ($E_{ij}(\mu)$).  
+\end{itemize}
+\section{Matrici nei sistemi lineari}
+Ad un sistema lineare possono essere associate tre matrici: quella dei coefficienti delle variabili (A) con m righe e n colonne, quella dei termini noti (\underline{b}) con m 
+righe e 1 colonna e quella che le unisce:(A$|$\underline{b}) o matrice completa del sistema lineare, con m righe e n+1 colonne.
+\subsection{Operazioni elementari sulle matrici}
+\begin{itemize}
+\item Scambiare di posto due righe: ($S_{i,j}$)
+\item Moltiplicazione di una riga per uno scalare$\neq 0$ ($D_i(\lambda)$)
+\item Sostituire una riga con la riga stessa sommata al multiplo di un'altra appartenente alla matrice ($E_{ij}(\mu)$). 
+\end{itemize}
+\subsection{Matrici a scalini}
+Una matrice si dice a scalini se comunque prese due righe consecutive $R_i$ e $R_{i+1}$ si verifica:
+\begin{itemize}
+\item Sono entrambe non nulle e il numero di zeri che precedono il primo elemento non nullo di $R_{i+1}$ \`e maggiore del numero di zeri che precedono il primo elemento non 
+nullo di $R_{i}$
+\item $R_{i+1}$ \`e nulla.
+\end{itemize}
+\subsection{Metodo di risoluzione di un sistema lineare da una matrice (algoritmo di Gauss-Jordan)}
+Dato un sistema lineare ne scrivo la matrice completa $(A|b)$.\\
+A tale matrice applico delle operazioni elementari per ricondurla alla forma a scalini.\\
+Per eseguire ci\`o individuo la riga avente il minor numero di elementi nulli prima di un pivot (primo elemento non nullo della riga) e lo porto alla prima riga tramite un operazione elementare di scambio. Fatto ci\`o utilizzo i coefficienti di tale riga per annullare il maggior numero di coefficienti nelle righe che seguono, in modo tale da avere una matrice tale che prese due righe consecutive $R_i$ e $R_{i+1}$ si ha:
+\begin{itemize}
+\item Il primo elemento non nullo di $R_{i+1}$ è preceduto da un numero di elementi nulli maggiore rispetto a $R_i$;
+\item $R_{i+1}$ è una riga formata solo da elementi nulli.
+\end{itemize}
+Il numero di pivot di una matrice viene definito come rango della matrice ($rg(A)$).
+\subsubsection{Teorema di Rouch\`e-Capelli}
+Dato un sistema lineare in n incognite, di matrice dei coefficienti A e matrice completa A$|$\underline{b} il sistema \`e compatibile se e solo se rk(A)=rk(A$|$
+\underline{b}). Il sistema ha un'unica soluzione se rk(A)=n, se $rk(A)<n$ il sistema ha infinite soluzioni dipendenti da n-rk(A) incognite. Le variabili libere si 
+identificano nelle colonne senza pivot.
+\subsection{Forma a scalini ridotta per righe}
+Una forma a scalini si dice ridotta per righe (rref(A)) se tutti i pivot valgono 1 e sono l'unico elemento non nullo della colonna. Dalla matrice a scalini ridotta per righe
+ottengo le soluzioni del sistema. Per portare la matrice in tale forma parto dall'ultimo pivot ed elimino i numeri sopra di esso.
